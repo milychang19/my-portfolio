@@ -5,10 +5,12 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Journey from './pages/Journey';
 import Contact from './pages/Contact';
+import Footer from './pages/Footer';
 
 function App() {
   return (
     <div className="App-header">
+      
       
       <Header/>
       <Home />
@@ -16,6 +18,7 @@ function App() {
       <Projects />
       <Journey />
       <Contact />
+      <Footer />
     </div>
   );
 }

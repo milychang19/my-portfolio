@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
-.App body{
+.App-header {
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
 }
@@ -8,16 +7,84 @@
 section {
   padding: 20px;
   margin: 20px;
+  width: 100%;
 }
 
 .App-header {
   background-color: #FFFFEC;
+  color: #1F1A12;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #1F1A12;
 }
 
+h1{
+  font-family: "Fraunces", serif;
+  font-size: 45px;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#header{
+  background-color: #EFEEDD;
+  margin: 0px;
+  padding: 0px;
+  align-items: left;
+}
+
+#logo {
+  height: 100px;
+  max-width:100%;
+}
+
+
+.nav-bar ul {
+  font-weight: 350;
+  font-size: 0.9em;
+  list-style-type: none;
+  display: flex;
+  gap: 34px;
+  padding: 20px;
+}
+
+.nav-bar a {
+  font-family: "Fraunces", serif;
+  color: #1F1A12;
+  text-decoration: none;
+  display: inline-block;
+  width: 90px;
+}
+.nav-bar #longer-nav{
+  width: 100px;
+}
+
+.nav-bar a:hover {
+  font-weight: 400;
+}
+
+/* Home */
+#home h1{
+  font-family: "Yeseva One", serif;
+  color: #095D40;
+  font-size: 80px;
+  font-weight: normal;
+}
+
+/* Contact */
+#contact{
+  background-color: #EFEEDD;
+  border-radius: 50px;
+  margin: 0px;
+  padding: 0px;
+}
