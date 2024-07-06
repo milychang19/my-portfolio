@@ -5,7 +5,7 @@
 }
 
 section {
-  padding: 20px;
+  padding: 0px;
   margin: 20px;
   width: 100%;
 }
@@ -39,7 +39,6 @@ header {
 #header{
   background-color: #EFEEDD;
   margin: 0px;
-  padding: 0px;
   align-items: left;
 }
 
@@ -54,7 +53,7 @@ header {
   font-size: 0.9em;
   list-style-type: none;
   display: flex;
-  gap: 34px;
+  gap: 1.8em;
   padding: 20px;
 }
 
@@ -77,16 +76,55 @@ header {
 text{
   font-family: "Yeseva One", serif;
   fill: #095D40;
-  font-size: 35px;
+  /* font-size: 38px; */
+  font-size: 1.4em;
   font-weight: normal;
+  padding-top: 0px;
 }
 #portrait {
-  height: 300px;
-  width: 300px;
+  height: 7em;
+  width: 7em;
   border-radius: 50%;
   object-fit: cover;
+  transform: scale(1.75);
+}
+#home p{
+  padding-top: 60px;
 }
 
+button{
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1em;
+  background-color: #095D40;
+  border: none;
+  color: #FFA857;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: 700;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+button:hover{
+  background-color: #074D35;
+}
+/* About */
+.about-me{
+  font-size: 3em;
+  color: #034AB4;
+  font-style: italic;
+  padding: 0px;
+  margin: 0px;
+}
+
+#move-left{
+  padding-right: 100px;
+}
+#move-right{
+  padding-left: 100px;
+}
 /* Contact */
 #contact{
   background-color: #EFEEDD;

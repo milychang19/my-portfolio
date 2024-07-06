@@ -1,5 +1,6 @@
 import React from 'react';
 import portrait from '../elements/portrait.jpg';
+import resume from '../elements/resume.pdf';
 
 const Home = () => {
   return (
@@ -9,7 +10,7 @@ const Home = () => {
         <text x="20%"><textPath href="#curve">Emily Chang</textPath></text>
       </svg>
       <img src={portrait} alt="" id="portrait"/>
-      <p>Resume</p>
+      <p><a href={resume} title="Resume" target="_blank" rel="noreferrer" class="pdf-button"><button>Resume</button></a></p>      
     </section>
   );
 };
