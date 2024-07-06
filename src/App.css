@@ -79,6 +79,11 @@ header {
   color: #095D40;
   font-size: 80px;
   font-weight: normal;
+  margin-top: 0;
+}
+
+#portrait {
+  height: 500px;
 }
 
 /* Contact */

@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from "../elements/logo-ec.png";
 
 const Header = () => {

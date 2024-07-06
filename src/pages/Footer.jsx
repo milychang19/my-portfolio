@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Footer = () => {
     return (
       <section id="footer">
@@ -6,4 +8,4 @@ const Footer = () => {
     );
   };
   
-  export default Footer;
+export default Footer;
