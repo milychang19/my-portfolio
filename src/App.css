@@ -74,16 +74,17 @@ header {
 }
 
 /* Home */
-#home h1{
+text{
   font-family: "Yeseva One", serif;
-  color: #095D40;
-  font-size: 80px;
+  fill: #095D40;
+  font-size: 35px;
   font-weight: normal;
-  margin-top: 0;
 }
-
 #portrait {
-  height: 500px;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 /* Contact */
