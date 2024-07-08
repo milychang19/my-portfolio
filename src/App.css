@@ -125,10 +125,40 @@ button:hover{
 #move-right{
   padding-left: 100px;
 }
+
+/* Projects */
+p{
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.project-container{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+.project-card{
+  background-color: #F3F7E4;
+  border-radius: 50px;
+  width: 300px;
+}
+
+h3{
+  font-family: 'Yeseva One', sans-serif;
+  font-weight: 300;
+}
+
 /* Contact */
 #contact{
   background-color: #EFEEDD;
   border-radius: 50px;
-  margin: 0px;
-  padding: 0px;
+  padding-bottom: 100px;
+}
+
+#contact-me{
+  color:#095D40;
+}
+#face{
+  height: 400px;
+  width: 400px;
 }
