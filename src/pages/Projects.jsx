@@ -1,4 +1,5 @@
 import React from 'react';
+import project1 from "../elements/project-card1.jpg";
 
 const Projects = () => {
   return (
@@ -7,7 +8,7 @@ const Projects = () => {
       <div class="project-container">
         <div class="project-card">
           <h3>ResShiftGenerator</h3>
-          
+          <img src={project1} alt="" class="card-img"></img>
           <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a...</p>
           </div>
         <div class="project-card">
