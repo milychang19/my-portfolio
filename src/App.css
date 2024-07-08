@@ -125,27 +125,31 @@ button:hover{
 #move-right{
   padding-left: 100px;
 }
-
-/* Projects */
-p{
+.me{
   padding-left: 200px;
   padding-right: 200px;
 }
 
+/* Projects */
 .project-container{
   display: flex;
-  gap: 50px;
+  gap: 40px;
   justify-content: center;
+  margin: 10px;
 }
 .project-card{
   background-color: #F3F7E4;
   border-radius: 50px;
-  width: 300px;
+  width: 400px;
 }
 
 h3{
   font-family: 'Yeseva One', sans-serif;
   font-weight: 300;
+}
+p{
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* Contact */
