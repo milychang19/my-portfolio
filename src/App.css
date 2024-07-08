@@ -135,25 +135,37 @@ button:hover{
   display: flex;
   gap: 40px;
   justify-content: center;
-  margin: 10px;
+  /* margin: 20px; */
 }
 .project-card{
   background-color: #F3F7E4;
   border-radius: 50px;
-  width: 400px;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  width: 280px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  padding: 20px;
+  padding-top: 40px;
 }
 .card-img{
-  width: fit-content;
+  height: auto;
+  max-width: 100%;
+  width: auto;
 }
+
+
 h3{
   font-family: 'Yeseva One', sans-serif;
   font-weight: 300;
-  margin: 20px;
+  margin-top: 15px;
 }
-p{
-  margin-left: 20px;
-  margin-right: 20px;
+a{
+  text-decoration: none;
+  color:#1F1A12;
+}
+
+.description{
+  font-size: 0.8em;
+  font-weight: 380;
 }
 
 /* Contact */
@@ -169,4 +181,9 @@ p{
 #face{
   height: 400px;
   width: 400px;
+}
+
+/* Footer */
+.end-notes{
+  color:#95A29D;
 }
