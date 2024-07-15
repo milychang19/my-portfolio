@@ -19,26 +19,26 @@ import project1 from "../elements/project-card1.jpg";
 //     description: "Employing object-oriented design and serialization, the game includes game saving and other rule settings. Unit testing was conducted to validate inheritance abstraction and error handling. The robust code demonstrates great modularity and extensibility.",
 //   }
 // ]
-//gello
+
 const Projects = () => {
   return (
     <section id="projects" className="my-5">
       <h1 className="font-sub text-5xl font-bold text-brown p-10">project highlights</h1>
       <div className="flex gap-x-10 place-content-center">
-        <div className="">
+        <div className="bg-sage shadow-card rounded-[50px] p-5 pt-10 w-80">
           <img src={project1} alt=""></img>
-          <h3><a href="https://github.com/milychang19/ResShiftGenerator" target="_blank" rel="noreferrer">ResShiftGenerator</a></h3>
-          <p class="description">...</p>
+          <h3 className="font-title text-brown"><a href="https://github.com/milychang19/ResShiftGenerator" target="_blank" rel="noreferrer">ResShiftGenerator</a></h3>
+          <p className="text-base text-justify text-brown">Employing object-oriented design and serialization, the game includes game saving and other rule settings. Unit testing was conducted to validate inheritance abstraction and error handling. The robust code demonstrates great modularity and extensibility.</p>
         </div>
-        <div class="project-card">
+        <div className="bg-sage shadow-card rounded-[50px] p-5 pt-10 w-80">
           <img src={project1} alt="" ></img>
-          <h3><a href="https://github.com/milychang19/BattleshipGameAI" target="_blank" rel="noreferrer">BattleshipAI</a></h3>
-          <p class="description">...</p>
+          <h3 className="font-title text-brown"><a href="https://github.com/milychang19/BattleshipGameAI" target="_blank" rel="noreferrer">BattleshipAI</a></h3>
+          <p className="text-base text-justify text-brown">Employing object-oriented design and serialization, the game includes game saving and other rule settings. Unit testing was conducted to validate inheritance abstraction and error handling. The robust code demonstrates great modularity and extensibility.</p>
         </div>
-        <div class="project-card">
+        <div className="bg-sage shadow-card rounded-[50px] p-5 pt-10 w-80">
           <img src={project1} alt=""></img>
-          <h3><a href="https://github.com/milychang19/MancalaGame" target="_blank" rel="noreferrer">MancalaGame</a></h3>
-          <p class="description">...</p>
+          <h3 className="font-title text-brown"><a href="https://github.com/milychang19/MancalaGame" target="_blank" rel="noreferrer">MancalaGame</a></h3>
+          <p className="text-base text-justify text-brown">...</p>
         </div>
       </div>
       
