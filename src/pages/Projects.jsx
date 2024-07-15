@@ -19,7 +19,7 @@ import project1 from "../elements/project-card1.jpg";
 //     description: "Employing object-oriented design and serialization, the game includes game saving and other rule settings. Unit testing was conducted to validate inheritance abstraction and error handling. The robust code demonstrates great modularity and extensibility.",
 //   }
 // ]
-
+//gello
 const Projects = () => {
   return (
     <section id="projects" className="my-5">
