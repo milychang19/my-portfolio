@@ -8,14 +8,6 @@
   font-size: calc(10px + 2vmin);
 }
 
-
-/* Projects */
-.project-container{
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-  /* margin: 20px; */
-}
 .project-card{
   background-color: #F3F7E4;
   border-radius: 50px;
@@ -24,11 +16,6 @@
   justify-content: center;
   padding: 20px;
   padding-top: 40px;
-}
-.card-img{
-  height: auto;
-  max-width: 100%;
-  width: auto;
 }
 
 .description{
@@ -49,18 +36,4 @@
 #face{
   height: 400px;
   width: 400px;
-}
-.icon{
-  color: #FFA857;
-
-}
-
-.icon:hover{
-  color: #FDB777;
-}
-
-
-/* Footer */
-.end-notes{
-  color:#95A29D;
 }

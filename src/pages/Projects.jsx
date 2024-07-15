@@ -24,19 +24,19 @@ const Projects = () => {
   return (
     <section id="projects" className="my-5">
       <h1 className="font-sub text-5xl font-bold text-brown p-10">project highlights</h1>
-      <div class="project-container">
-        <div class="project-card">
-          <img src={project1} alt="" class="card-img"></img>
+      <div className="flex gap-x-10 place-content-center">
+        <div className="">
+          <img src={project1} alt=""></img>
           <h3><a href="https://github.com/milychang19/ResShiftGenerator" target="_blank" rel="noreferrer">ResShiftGenerator</a></h3>
           <p class="description">...</p>
         </div>
         <div class="project-card">
-          <img src={project1} alt="" class="card-img"></img>
+          <img src={project1} alt="" ></img>
           <h3><a href="https://github.com/milychang19/BattleshipGameAI" target="_blank" rel="noreferrer">BattleshipAI</a></h3>
           <p class="description">...</p>
         </div>
         <div class="project-card">
-          <img src={project1} alt="" class="card-img"></img>
+          <img src={project1} alt=""></img>
           <h3><a href="https://github.com/milychang19/MancalaGame" target="_blank" rel="noreferrer">MancalaGame</a></h3>
           <p class="description">...</p>
         </div>
