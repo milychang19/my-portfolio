@@ -2,14 +2,17 @@
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
-    extend: {},
-    color: {
-      'forest': '#095D40',
-      'beige': '#FFFFEC',
-      'blue': '#034AB4',
-      'sun': '#FDB777',
-      'brown': '#1F1A12',
-      'matcha': '#EFEEDD',
+    extend: {
+      colors: {
+        'green': '#095D40',
+        'beige': '#FFFFEC',
+        'blue': '#034AB4',
+        'yellow': '#FFA857',
+        'brown': '#1F1A12',
+        'matcha': '#EFEEDD',
+        'sun': '#FDB777',
+        'forest': '#074D35',
+      },
     },
     fontFamily: {
       title: ['Yeseva One', 'serif'],
@@ -18,6 +21,8 @@ module.exports = {
     },
     fontWeight: {
       normal: '400',
+      bold: '700',
+      xbold: '800',
     }
   },
   plugins: [],

@@ -4,7 +4,7 @@ import logo from "../elements/logo-ec.png";
 const Header = () => {
   return (
     <section id="header">
-      <header className="flex justify-items-start	items-center mx-5 bg-matcha">
+      <header className="flex justify-items-start	items-center bg-matcha px-5">
         <a href="#header"><img src={logo} alt="" className="h-24 w-24 max-w-full "/></a>
         <nav className="font-sub m-5">
           <ul className="flex gap-5">
