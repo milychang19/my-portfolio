@@ -17,7 +17,7 @@ const records = () => [
   {
     name: "MancalaGame",
     link: "https://github.com/milychang19/MancalaGame",
-    image: require("../elements/project-card2.jpg"),
+    image: require("../elements/project-card3.jpg"),
     description: "Employing object-oriented design and serialization, the game includes game saving and other rule settings. Unit testing was conducted to validate inheritance abstraction and error handling. The robust code demonstrates great modularity and extensibility.",
   }
 ]
