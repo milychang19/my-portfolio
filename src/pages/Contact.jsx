@@ -19,9 +19,9 @@ const Contact = () => {
         <div className="w-[40%] mt-16">
           <img src={logo} alt="" title="© 2024 Emily Chang. All rights reserved."></img>
           <div className="flex gap-3 place-content-center m-4">
-            <a href="https://www.linkedin.com/in/emily-chang-485962234/" target="_blank" rel="noreferrer" title="LinkedIn"><AiFillLinkedin className="w-16 h-16 fill-yellow transition-colors hover:fill-sun"/></a>
-            <a href="https://github.com/milychang19?ocid=AIDcmmli8vlwie_SEM__k_CjwKCAjw-O6zBhASEiwAOHeGxWZJoswgM1wM05bjiyrXGOtRXjaDnea15Is_IDrOCGaAYogtxg1hFBoCh1sQAvD_BwE_k_" target="_blank" rel="noreferrer" title="GitHub"><AiFillGithub className="w-16 h-16 fill-yellow transition-colors hover:fill-sun"/></a>
-            <a href="mailto:emily0109.ec@gmail.com" title="emily0109.ec@gmail.com" ><AiFillMail className="w-16 h-16 fill-yellow transition-colors hover:fill-sun"/></a>
+            <a href="https://www.linkedin.com/in/emily-chang-485962234/" target="_blank" rel="noreferrer" title="LinkedIn"><AiFillLinkedin className="w-16 h-16 fill-yellow transition-colors duration-300 hover:fill-sun"/></a>
+            <a href="https://github.com/milychang19?ocid=AIDcmmli8vlwie_SEM__k_CjwKCAjw-O6zBhASEiwAOHeGxWZJoswgM1wM05bjiyrXGOtRXjaDnea15Is_IDrOCGaAYogtxg1hFBoCh1sQAvD_BwE_k_" target="_blank" rel="noreferrer" title="GitHub"><AiFillGithub className="w-16 h-16 fill-yellow transition-colors duration-300 hover:fill-sun"/></a>
+            <a href="mailto:emily0109.ec@gmail.com" title="emily0109.ec@gmail.com" ><AiFillMail className="w-16 h-16 fill-yellow transition-colors duration-300 hover:fill-sun"/></a>
           </div>
         </div>
       </div>
