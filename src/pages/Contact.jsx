@@ -5,8 +5,8 @@ import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
 
 const Contact = () => {
   return (
-    <section id="contact">
-      <div className="flex mx-32">
+    <section id="contact" className="rounded-[50px] bg-matcha pb-20">
+      <div className="flex mx-32 ">
         <div className="align-center w-[60%]">
           <h1 className="font-sub text-5xl font-xbold text-green p-10 pt-14">Contact Me</h1> 
           <form action="https://getform.io/f/anlexena" method="POST" className="grid"> 

@@ -8,22 +8,3 @@
   font-size: calc(10px + 2vmin);
 }
 
-.description{
-  font-size: 0.8em;
-  font-weight: 380;
-}
-
-/* Contact */
-#contact{
-  background-color: #EFEEDD;
-  border-radius: 50px;
-  padding-bottom: 100px;
-}
-
-#contact-me{
-  color:#095D40;
-}
-#face{
-  height: 400px;
-  width: 400px;
-}

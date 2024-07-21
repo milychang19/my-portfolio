@@ -26,7 +26,7 @@ const Projects = () => {
   const projectRecords = records();
 
   return (
-    <section id="projects" className="my-5">
+    <section id="projects" className="mb-24">
       <h1 className="font-sub text-5xl font-bold text-brown p-10">project highlights</h1>
       <div className="flex gap-x-10 place-content-center">
         {projectRecords.map((project, index) => (

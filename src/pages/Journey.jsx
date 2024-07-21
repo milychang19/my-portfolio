@@ -43,27 +43,22 @@ const Journey = () => {
 
 
   return (
-    <section id="journey">
+    <section id="journey" className="mb-24">
       <h1 className="font-sub text-5xl font-bold text-brown p-10">my journey</h1>
-      <div>
-        {workExperiences.map((experience, index) => (
-          <div key={index} className={`flex mb-10 mx-20 ${hoveredIndex !== null && hoveredIndex !== index ? 'opacity-70 ease-in-out duration-75' : ''}`}
-            onMouseEnter={() => handleMouseEnter(index)}
-            onMouseLeave={handleMouseLeave}
-          >
-            <div className="mw-20px">
-              <p className="text-xl text-right">{experience.time}</p>
-            </div>
-            <div className='text-left w-[53%] pl-8'>
-            <p className="font-sub font-bold text-2xl">{experience.position} <spam className={`font-sub text-base font-[600] italic ${hoveredIndex !== null && hoveredIndex === index ? 'text-green':''}`}>{experience.company}</spam></p>
-            {/* <p className={`font-sub text-base font-[600] italic ${hoveredIndex !== null && hoveredIndex == index ? 'text-green':''}`}>{experience.company}</p> */}
-            <p className="text-base pt-2">{experience.description}</p>
-            </div>
+      {workExperiences.map((experience, index) => (
+        <div key={index} className={`flex mb-10 mx-40 justify-center duration-300 ${hoveredIndex !== null && hoveredIndex !== index ? 'opacity-60 duration-300' : ''}`}
+          onMouseEnter={() => handleMouseEnter(index)}
+          onMouseLeave={handleMouseLeave}
+        >
+          <div className="mw-[90px]">
+            <p className="text-xl text-right">{experience.time}</p>
           </div>
-        ))}
-
-        
-      </div>
+          <div className="text-left pl-8 w-[63%]">
+            <p className="font-sub font-bold text-2xl">{experience.position} <span className={`font-sub text-base font-[600] italic duration-200 ${hoveredIndex !== null && hoveredIndex === index ? 'text-green duration-200':''}`}>{experience.company}</span></p>
+            <p className="text-base pt-2">{experience.description}</p>
+          </div>
+        </div>
+      ))}
     </section>
   );
 };
