@@ -4,28 +4,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'green': '#095D40',
-        'beige': '#FFFFEC',
-        'blue': '#034AB4',
-        'yellow': '#FFA857',
-        'brown': '#1F1A12',
-        'matcha': '#EFEEDD',
-        'sage': '#F3F7E4',
+        'green': '#095D40', //name title
+        'beige': '#FFFFEC', //background
+        'blue': '#034AB4', //about me
+        'yellow': '#FFA857', //icon
+        'brown': '#1F1A12', //text
+        'matcha': '#EFEEDD', //header & contact card
+        'sage': '#F3F7E4', //project cards
         'grey': '#95A29D',
-        'sun': '#FDB777',
-        'forest': '#074D35',
+        'sun': '#FDB777', //hovered icon
+        'forest': '#074D35', //hovered button
+        'coral': '#CD807B', //tag1
+        'mint': '#7DA68D', //tag2
+        'star': '#F4CD94', //tag3
+        'sky': '#AEBFD5', //project name
       },
       boxShadow: {
         'card': '0px 0px 10px rgba(0, 0, 0, 0.1)',
-      },
-      keyframes: {
-        easeInLeft: {
-          '0%': { transform: 'translateX(-100%)', opacity: 0 },
-          '100%': { transform: 'translateX(0)', opacity: 1 },
-        },
-      },
-      animation: {
-        easeInLeft: 'easeInLeft 5s ease-in-out',
       },
     },
     fontFamily: {

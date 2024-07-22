@@ -10,9 +10,9 @@ const Contact = () => {
         <div className="align-center w-[60%]">
           <h1 className="font-sub text-5xl font-xbold text-green p-10 pt-14">Contact Me</h1> 
           <form action="https://getform.io/f/anlexena" method="POST" className="grid"> 
-            <input type="text" name="name" className="h-16 rounded-[20px] indent-5 m-3 text-xl shadow-sm transition" placeholder="Your Name"></input>
-            <input type="email" name="email" className="h-16 rounded-[20px] indent-5 m-3 text-xl shadow-sm transition" placeholder="Email"></input>
-            <textarea name="messages" className="h-32 rounded-[20px] m-3 p-5 text-xl shadow-sm transition" placeholder="Messages"></textarea>
+            <input type="text" name="name" className="h-16 rounded-[20px] indent-5 m-3 text-xl shadow-sm" placeholder="Your Name"></input>
+            <input type="email" name="email" className="h-16 rounded-[20px] indent-5 m-3 text-xl shadow-sm" placeholder="Email"></input>
+            <textarea name="messages" className="h-32 rounded-[20px] m-3 p-5 text-xl shadow-sm" placeholder="Messages"></textarea>
             <button type="submit" className="bg-green text-yellow font-bold p-1.5 w-44 rounded-xl shadow-lg transition-colors hover:bg-forest place-self-center m-3">Send</button>
           </form>
         </div>

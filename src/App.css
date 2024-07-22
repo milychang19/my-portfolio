@@ -1,10 +1,5 @@
 
 .App-header {
-  font-family: "Josefin Sans", sans-serif;
-  text-align: center;
-  background-color: #FFFFEC;
-  min-height: 100vh; 
-  flex-direction: column;
   font-size: calc(10px + 2vmin);
 }
 

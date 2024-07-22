@@ -9,7 +9,7 @@ import Footer from './pages/Footer';
 
 function App() {
   return (
-    <div className="App-header">
+    <div className="App-header font-text bg-beige text-center">
       <Header/>
       <Home />
       <About />
