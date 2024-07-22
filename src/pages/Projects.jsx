@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 const records = () => [
   {
@@ -28,21 +28,31 @@ const tagColors = ["bg-coral", "bg-mint", "bg-star"];
 
 const Projects = () => {
   const projectRecords = records();
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
+  const handleMouseEnter = (index) => {
+    setHoveredIndex(index);
+  };
+  const handleMouseLeave = () => {
+    setHoveredIndex(null);
+  };
 
   return (
     <section id="projects" className="mb-24">
       <h1 className="font-sub text-5xl font-bold text-brown p-10">project highlights</h1>
       <div className="flex gap-x-10 place-content-center">
         {projectRecords.map((project, index) => (
-          <div key={index} className="bg-sage shadow-card rounded-[50px] p-5 py-8 w-80">
-            {/* <img src={project1} alt=""></img> */}
-            <img src={project.image} alt=""></img>
-            <h3 className="font-title text-brown bg-sky pb-4 backdrop:"><a href={project.link} target="_blank" rel="noopener noreferrer">{project.name}</a></h3>
-            {/* <div className="bg-sky pb-4"></div> */}
+          <div key={index} className={`bg-sage shadow-card rounded-[50px] p-5 py-8 w-80 ease-in-out transition-all duration-300 ${
+            hoveredIndex === index ? 'drop-shadow-card -translate-y-1' : ''}`}
+            onMouseEnter={() => handleMouseEnter(index)}
+            onMouseLeave={handleMouseLeave} 
+          >
+            <img src={project.image} alt="" className="h-40 object-cover"></img>
+            <h3 className="font-title text-brown pb-4"><a href={project.link} target="_blank" rel="noopener noreferrer" className={`ease-out duration-300 ${hoveredIndex === index ? 'bg-sky':''}`}>{project.name}</a></h3>
             <p className="text-base text-justify text-brown my-1">{project.description}</p>
             <ul className="flex gap-2 mt-2">
               {project.tags.map((tag, index) => (
-                <li key={index} className={`text-base rounded-2xl w-fit px-4 py-1 shadow-sm ${tagColors[index % tagColors.length]}`}>{tag}</li>
+                <li key={index} className={`text-base rounded-2xl w-fit px-4 py-1 drop-shadow ${tagColors[index % tagColors.length]}`}>{tag}</li>
               ))}
             </ul>
           </div>

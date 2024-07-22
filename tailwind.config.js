@@ -22,6 +22,9 @@ module.exports = {
       boxShadow: {
         'card': '0px 0px 10px rgba(0, 0, 0, 0.1)',
       },
+      dropShadow: {
+        'card': '0px 20px 10px rgba(0, 0, 0, 0.03)',
+      }
     },
     fontFamily: {
       title: ['Yeseva One', 'serif'],

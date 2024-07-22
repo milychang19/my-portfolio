@@ -46,7 +46,7 @@ const Journey = () => {
     <section id="journey" className="mb-24">
       <h1 className="font-sub text-5xl font-bold text-brown p-10">my journey</h1>
       {workExperiences.map((experience, index) => (
-        <div key={index} className={`flex mb-10 mx-40 justify-center duration-300 ${hoveredIndex !== null && hoveredIndex !== index ? 'opacity-60 duration-300' : ''}`}
+        <div key={index} className={`flex mb-10 mx-40 justify-center duration-300 hover:translate-x-1 ${hoveredIndex !== null && hoveredIndex !== index ? 'opacity-60' : ''}`}
           onMouseEnter={() => handleMouseEnter(index)}
           onMouseLeave={handleMouseLeave}
         >
