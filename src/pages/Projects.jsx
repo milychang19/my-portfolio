@@ -38,7 +38,7 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="mb-24">
+    <section id="projects" className="mb-12">
       <h1 className="font-sub text-5xl font-bold text-brown p-10">project highlights</h1>
       <div className="flex gap-x-10 place-content-center">
         {projectRecords.map((project, index) => (
@@ -48,7 +48,7 @@ const Projects = () => {
             onMouseLeave={handleMouseLeave} 
           >
             <img src={project.image} alt="" className="h-40 object-cover"></img>
-            <h3 className={`font-title text-brown relative inline-block w-max after:absolute after:bg-sky after:h-4 after:top-[30px] after:w-[100%] after:block pb-4 ${hoveredIndex === index ? 'after:h-8 after:top-0':''}`}>
+            <h3 className={`font-title text-brown relative inline-block w-max pb-4 after:absolute after:bg-sky after:h-8 after:bottom-0 after:w-[100%] after:block after:scale-y-50 after:duration-750 after:ease-out after:transition-transform after:-z-1 ${hoveredIndex === index ? 'after:scale-y-100 after:bottom-1 z-50':''}`}>
               <a href={project.link} target="_blank" rel="noopener noreferrer">{project.name}</a></h3>
             <p className="text-base text-justify text-brown my-1">{project.description}</p>
             <ul className="flex gap-2 mt-2">
@@ -59,7 +59,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-      
+      {/* <h3 className="font-title text-brown relative inline-block w-max after:absolute after:bg-sky after:h-8 after:bottom-0 after:w-[100%] after:block pb-4 after:scale-y-50 after:hover:scale-y-100 after:hover:bottom-1 after:duration-750 after:ease-out after:transition-transform">Test3</h3> */}
     </section>
   );
 };
