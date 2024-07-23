@@ -48,7 +48,8 @@ const Projects = () => {
             onMouseLeave={handleMouseLeave} 
           >
             <img src={project.image} alt="" className="h-40 object-cover"></img>
-            <h3 className="font-title text-brown pb-4"><a href={project.link} target="_blank" rel="noopener noreferrer" className={`ease-out duration-300 ${hoveredIndex === index ? 'bg-sky':''}`}>{project.name}</a></h3>
+            <h3 className={`font-title text-brown relative inline-block w-max after:absolute after:bg-sky after:h-4 after:top-[30px] after:w-[100%] after:block pb-4 ${hoveredIndex === index ? 'after:h-8 after:top-0':''}`}>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">{project.name}</a></h3>
             <p className="text-base text-justify text-brown my-1">{project.description}</p>
             <ul className="flex gap-2 mt-2">
               {project.tags.map((tag, index) => (
