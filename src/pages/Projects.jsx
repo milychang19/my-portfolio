@@ -48,7 +48,7 @@ const Projects = () => {
             onMouseLeave={handleMouseLeave} 
           >
             <img src={project.image} alt="" className="h-40 object-cover"></img>
-            <h3 className={`font-title text-brown relative inline-block w-max pb-4 after:absolute after:bg-sky after:h-8 after:bottom-0 after:w-[100%] after:block after:scale-y-50 after:duration-750 after:ease-out after:transition-transform after:-z-1 ${hoveredIndex === index ? 'after:scale-y-100 after:bottom-1 z-50':''}`}>
+            <h3 className={`font-title text-brown relative inline-block w-max pb-4 z-20 after:absolute after:bg-sky after:h-8 after:bottom-0 after:w-full after:block after:scale-y-50 after:duration-300 after:ease-out after:transition-transform after:-z-10 ${hoveredIndex === index ? 'after:bottom-2 after:scale-y-[80%]' : ''}`}>
               <a href={project.link} target="_blank" rel="noopener noreferrer">{project.name}</a></h3>
             <p className="text-base text-justify text-brown my-1">{project.description}</p>
             <ul className="flex gap-2 mt-2">
@@ -59,7 +59,6 @@ const Projects = () => {
           </div>
         ))}
       </div>
-      {/* <h3 className="font-title text-brown relative inline-block w-max after:absolute after:bg-sky after:h-8 after:bottom-0 after:w-[100%] after:block pb-4 after:scale-y-50 after:hover:scale-y-100 after:hover:bottom-1 after:duration-750 after:ease-out after:transition-transform">Test3</h3> */}
     </section>
   );
 };
