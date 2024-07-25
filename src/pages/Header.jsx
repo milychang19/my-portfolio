@@ -8,10 +8,10 @@ const Header = () => {
         <a href="#header"><img src={logo} alt="" className="h-24 w-24 max-w-full "/></a>
         <nav className="font-sub m-5">
           <ul className="flex gap-5">
-            <li className="box-border w-32 font-[350] hover:font-normal duration-300"><a href="#about">About Me</a></li>
-            <li className="box-border w-28 font-[350] hover:font-normal duration-300"> <a href="#projects">Projects</a></li>
-            <li className="box-border w-28 font-[350] hover:font-normal duration-300"><a href="#journey">Journey</a></li>
-            <li className="box-border w-28 font-[350] hover:font-normal duration-300"><a href="#contact">Contact</a></li>
+            <li className="box-border w-32 font-[350] hover:font-normal duration-300 animate-fade-in-zoom1"><a href="#about">About Me</a></li>
+            <li className="box-border w-28 font-[350] hover:font-normal duration-300 animate-fade-in-zoom1"> <a href="#projects">Projects</a></li>
+            <li className="box-border w-28 font-[350] hover:font-normal duration-300 animate-fade-in-zoom1"><a href="#journey">Journey</a></li>
+            <li className="box-border w-28 font-[350] hover:font-normal duration-300 animate-fade-in-zoom1"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>

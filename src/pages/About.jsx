@@ -5,12 +5,20 @@ const quote = "“The only way to do great work is to love what you do” -Steve
 // const updates ="Currently, I'm working on ... at Magnet Forensics";
 
 const About = () => {
+  // const [isLoaded, setIsLoaded] = useState(false);
+
+  // useEffect(() => {
+  //   // Trigger the animation when the component mounts
+  //   setIsLoaded(true);
+  // }, []);
+
   return (
-    <section id="about" className="my-20">
-      <h1 className="font-sub text-7xl text-blue italic font-xbold pr-24">About</h1>
-      <h1 className="font-sub text-7xl text-blue italic font-xbold pl-28 relative top-[-10px]">Me</h1>
-      <p className="w-1/2 py-5 text-lg inline-block first-letter:text-5xl">{selfIntro}</p>
-      <p className="italic text-xl px-4 font-sub block text-green font-[500]">{quote}</p>
+    <section id="about" className={`my-20`}>
+      
+      <h1 className="font-sub text-7xl text-blue italic font-xbold pr-24 animate-fade-in-zoom1">About</h1>
+      <h1 className="font-sub text-7xl text-blue italic font-xbold pl-28 relative top-[-10px] animate-fade-in-zoom1">Me</h1>
+      <p className="w-1/2 py-5 text-lg inline-block first-letter:text-5xl animate-fade-in-zoom2">{selfIntro}</p>
+      <p className="italic text-xl px-4 font-sub block text-green font-[500] animate-fade-in-zoom3">{quote}</p>
     </section>
   );
 };
