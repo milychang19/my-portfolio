@@ -39,7 +39,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="mb-12">
-      <h1 className="font-sub text-5xl font-bold text-brown p-10 animate-fade-in-zoom1">project highlights</h1>
+      <h1 className="font-sub text-4xl md:text-5xl font-bold text-brown p-10 animate-fade-in-zoom1">project highlights</h1>
       <div className="flex gap-x-10 place-content-center">
         {projectRecords.map((project, index) => (
           <div key={index} className={`bg-sage shadow-card rounded-[50px] p-5 py-8 w-80 ease-in-out transition-all duration-300 animate-fade-in-zoom2 ${

@@ -13,12 +13,12 @@ const About = () => {
   // }, []);
 
   return (
-    <section id="about" className={`my-20`}>
+    <section id="about" className={`md:my-20 my-8`}>
       
-      <h1 className="font-sub text-7xl text-blue italic font-xbold pr-24 animate-fade-in-zoom1">About</h1>
-      <h1 className="font-sub text-7xl text-blue italic font-xbold pl-28 relative top-[-10px] animate-fade-in-zoom1">Me</h1>
-      <p className="w-1/2 py-5 text-lg inline-block first-letter:text-5xl animate-fade-in-zoom2">{selfIntro}</p>
-      <p className="italic text-xl px-4 font-sub block text-green font-[500] animate-fade-in-zoom3">{quote}</p>
+      <h1 className="font-sub text-6xl md:text-7xl text-blue italic font-xbold pr-12 md:pr-24 animate-fade-in-zoom1">About</h1>
+      <h1 className="font-sub text-6xl md:text-7xl text-blue italic font-xbold pl-28 relative top-[-10px] animate-fade-in-zoom1">Me</h1>
+      <p className="text-justify md:text-center px-12 md:px-24 lg:px-0 lg:w-1/2 pb-5 text-sm md:text-lg inline-block first-letter:text-3xl md:first-letter:text-5xl animate-fade-in-zoom2">{selfIntro}</p>
+      <p className="italic text-xl px-12 md:px-4 font-sub block text-green font-[500] animate-fade-in-zoom3">{quote}</p>
     </section>
   );
 };

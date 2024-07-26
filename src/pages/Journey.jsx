@@ -43,19 +43,20 @@ const Journey = () => {
 
 
   return (
-    <section id="journey" className="mb-24">
-      <h1 className="font-sub text-5xl font-bold text-brown p-10 animate-fade-in-zoom1">my journey</h1>
+    <section id="journey" className="md:mb-24">
+      <h1 className="font-sub text-4xl md:text-5xl font-bold text-brown p-10 animate-fade-in-zoom1">my journey</h1>
       {workExperiences.map((experience, index) => (
-        <div key={index} className={`flex mb-10 mx-40 justify-center duration-300 hover:translate-x-1 ${hoveredIndex !== null && hoveredIndex !== index ? 'opacity-60' : ''}`}
+        <div key={index} className={`md:flex mb-10 mx-8 md:mx-40 justify-center duration-300 hover:translate-x-1 ${hoveredIndex !== null && hoveredIndex !== index ? 'opacity-60' : ''}`}
           onMouseEnter={() => handleMouseEnter(index)}
           onMouseLeave={handleMouseLeave}
         >
           <div className="mw-[90px]">
-            <p className="text-xl text-right animate-fade-in-zoom2">{experience.time}</p>
+            <p className="text-base md:text-xl text-right animate-fade-in-zoom2">{experience.time}</p>
           </div>
-          <div className="text-left pl-8 w-[63%]">
-            <p className="font-sub font-bold text-2xl animate-fade-in-zoom3">{experience.position} <span className={`font-sub text-base font-[600] italic duration-200 ${hoveredIndex !== null && hoveredIndex === index ? 'text-green duration-200':''}`}>{experience.company}</span></p>
-            <p className="text-base pt-2 animate-fade-in-zoom4">{experience.description}</p>
+          <div className="text-left md:pl-8 md:w-[63%]">
+            <p className="font-sub font-bold pr-1 text-xl md:text-2xl inline-block animate-fade-in-zoom3">{experience.position}</p>
+            <p className={`font-sub text-base font-[600] inline-block italic duration-200 ${hoveredIndex !== null && hoveredIndex === index ? 'text-green duration-200':''}`}>{experience.company}</p>
+            <p className="text-sm md:text-base pt-2 animate-fade-in-zoom4">{experience.description}</p>
           </div>
         </div>
       ))}
