@@ -1,6 +1,6 @@
 {
-  "honepage": "https://milychang19.github.io/Portfolio/",
-  "name": "Portfolio",
+  "honepage": "https://milychang19.github.io/my-portfolio",
+  "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
