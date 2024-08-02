@@ -40,7 +40,8 @@ const Projects = () => {
   return (
     <section id="projects" className="mb-12">
       <h1 className="font-sub text-4xl md:text-5xl font-bold text-brown p-10 animate-fade-in-zoom1">project highlights</h1>
-      <div className="flex gap-x-10 place-content-center">
+      <div class="overflow-x-auto py-5">
+      <div className="inline-flex mx-5 gap-x-10 place-content-center">
         {projectRecords.map((project, index) => (
           <div key={index} className={`bg-sage shadow-card rounded-[50px] p-5 py-8 w-80 ease-in-out transition-all duration-300 animate-fade-in-zoom2 ${
             hoveredIndex === index ? 'drop-shadow-card -translate-y-1' : ''}`}
@@ -50,14 +51,15 @@ const Projects = () => {
             <img src={project.image} alt="" className="h-40 object-cover animate-fade-in-zoom3"></img>
             <h3 className={`font-title text-brown relative inline-block w-max pb-4 z-20 after:absolute after:bg-sky after:h-8 after:bottom-0 after:w-full after:block after:scale-y-50 after:duration-300 after:ease-out after:transition-transform after:-z-10 animate-fade-in-zoom3 ${hoveredIndex === index ? 'after:bottom-2 after:scale-y-[80%]' : ''}`}>
               <a href={project.link} target="_blank" rel="noopener noreferrer">{project.name}</a></h3>
-            <p className="text-base text-justify text-brown my-1 animate-fade-in-zoom4">{project.description}</p>
+            <p className="text-sm md:text-base text-justify text-brown my-1 animate-fade-in-zoom4">{project.description}</p>
             <ul className="flex gap-2 mt-2">
               {project.tags.map((tag, index) => (
-                <li key={index} className={`text-base rounded-2xl w-fit px-4 py-1 drop-shadow animate-fade-in-zoom4 ${tagColors[index % tagColors.length]}`}>{tag}</li>
+                <li key={index} className={`text-xs md:text-base rounded-2xl w-fit px-4 py-1 drop-shadow animate-fade-in-zoom4 ${tagColors[index % tagColors.length]}`}>{tag}</li>
               ))}
             </ul>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );
