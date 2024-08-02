@@ -25,6 +25,9 @@ module.exports = {
       dropShadow: {
         'card': '0px 20px 10px rgba(0, 0, 0, 0.03)',
       },
+      fontSize: {
+        'calc-size': 'calc(10px + 2vmin)',
+      },
       keyframes: {
         'fade-in-zoom': {
           '0%': {
