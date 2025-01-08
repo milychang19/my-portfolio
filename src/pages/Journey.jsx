@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { useNavigate } from "react-router-dom";
 
 const work = () => [
   {
@@ -40,7 +41,7 @@ const Journey = () => {
   const handleMouseLeave = () => {
     setHoveredIndex(null); //set to null when the mouse leave
   };
-
+  const navigate = useNavigate();
 
   return (
     <section id="journey" className="md:mb-24">
@@ -60,7 +61,8 @@ const Journey = () => {
           </div>
         </div>
       ))}
-    </section>
+      <button className="bg-green text-yellow text-base md:text-2xl font-bold p-1.5 w-32 md:w-44 rounded-xl shadow-lg transition-color hover:bg-forest relative top-[-30px] animate-fade-in-zoom4" onClick={() =>navigate("/F24-work-term-report")}>Magnet Work Term Report</button>
+      </section>
   );
 };
 
