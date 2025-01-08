@@ -79,8 +79,6 @@ const Magnet = () => {
             <p style={{ whiteSpace: "pre-line" }}>{company}</p>
           </div>
         </div>
-        <section>
-          </section>
       </section>
 
       <section id="responsibilities" className="rounded-[50px] bg-matcha py-8 px-48">
