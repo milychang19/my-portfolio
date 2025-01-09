@@ -81,55 +81,63 @@ const Magnet = () => {
         </div>
       </section>
 
-      <section id="responsibilities" className="rounded-[50px] bg-matcha py-8 px-48">
-        <div>
-          <h2 className="font-sub font-bold text-4xl text-forest">A Glimpse into My Job</h2>
-          <p style={{ whiteSpace: "pre-line" }} className="m-4 px-10">{job}</p>
-        </div>
-        <div className="rounded-[50px] bg-white bg-opacity-50 text-left px-14 py-8 m-4 w-3/4 place-self-center">
-          <p className="font-bold">The technology and tools I leveraged in my role:</p>
-          <li>C#, Git, and SQLite</li>
-          <li>Visual Studio</li>
-          <li>Jira and Agile Board</li>
-          <li>Jenkins for automation testing (Artifact Regression, Case Metrics)</li>
-          <li>Azure DevOps</li>
-        </div>
-        <div className="text-left">
-          <h3 className="font-sub font-bold text-forest">highlights of my responsibilities</h3>
-          <p>Here’s a snapshot of the tasks I worked on during my term:</p>
-          {list.map((point, index) => (
-            <li key={index}>{point}</li>
-          ))}
-        </div>
-        <div className="bg-blue bg-opacity-70">
-          <h2 className="font-sub font-bold text-white">The Most Interesting Aspects of My Job</h2>
-          <p className="text-white">{experience}</p>
-        </div>
-        <div>
-          <h2 className="font-sub font-bold">Why Precision is Key at Magnet Forensics</h2>
-          <p>{principle1}</p>
-          <p>This focus on precision influenced how I approached my tasks, such as:</p>
-          {steps.map((point, index) => (
-            <li key={index}>{point}</li>
-          ))}
-          <p>{principle2}</p>
-        </div>
-      </section>
-
-      <section id="goals">
-          <div>
-          {goals.map((goal, index) => (
-            <div>
-              <h3 className="font-sub font-bold">{goal.title}</h3>
-              <p>{goal.results}</p>
-            </div>
-        ))}
+      <section id="responsibilities" className="rounded-[50px] bg-matcha">
+        <div className="py-8 px-48">
+          <div className="py-4">
+            <h2 className="font-sub font-bold text-4xl text-forest py-3">A Glimpse into My Job</h2>
+            <p style={{ whiteSpace: "pre-line" }} className="m-4 px-16">{job}</p>
           </div>
+          <div className="rounded-[50px] bg-white bg-opacity-50 text-left px-14 py-8 m-2 w-3/4 place-self-center">
+            <p className="font-bold">The technology and tools I leveraged in my role:</p>
+            <li>C#, Git, and SQLite</li>
+            <li>Visual Studio</li>
+            <li>Jira and Agile Board</li>
+            <li>Jenkins for automation testing (Artifact Regression, Case Metrics)</li>
+            <li>Azure DevOps</li>
+          </div>
+          <div className="text-left py-6 px-20">
+            <h3 className="font-sub font-bold text-forest text-2xl mb-2">highlights of my responsibilities</h3>
+            <p className="font-bold">Here’s a snapshot of the tasks I worked on during my term:</p>
+            {list.map((point, index) => (
+              <li key={index}>{point}</li>
+            ))}
+          </div>
+        </div>
+      
+        <div className="bg-forest bg-opacity-70 rounded-[50px] py-8 px-48">
+          <h2 className="font-sub font-bold text-beige text-3xl py-3">The Most Interesting Aspects of My Job</h2>
+          <p style={{ whiteSpace: "pre-line" }} className="text-beige m-4 px-16">{experience}</p>
+        </div>
+      </section>
+      <section>
+      
+        <div className="py-8 px-64">
+          <h2 className="font-sub font-bold text-brown text-3xl py-3">Why <span className="text-blue">Precision</span> is Key at Magnet Forensics</h2>
+          <div className="text-left m-4">
+            <p>{principle1}</p>
+            <p>This focus on precision influenced how I approached my tasks, such as:</p>
+            {steps.map((point, index) => (
+              <li key={index}>{point}</li>
+            ))}
+            <p><br/>{principle2}</p>
+          </div>
+        </div>
+      </section>
+      <hr className="border-brown opacity-50 mx-64"></hr>
+      <section id="goals">
+        <h2 className="font-sub font-bold text-brown text-3xl py-7">Goals & Growth</h2>
+        {goals.map((goal, index) => (
+          <div>
+            <h3 className="font-sub font-bold">{goal.title}</h3>
+            <p>{goal.results}</p>
+          </div>
+        ))}
       </section>
 
-      <section id="acknowledgement">
+      <section id="acknowledgement" className="py-8 px-64">
+        <h2 className="font-sub font-bold text-brown text-3xl py-7">Acknowledgement</h2>
         {conclude.map((sec, index) => (
-          <p>{sec}</p>
+          <p className="text-left mb-6">{sec}</p>
         ))}
       </section>
   

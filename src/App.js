@@ -30,7 +30,15 @@ function App() {
           />
           
           {/* Work Term Report Page */}
-          <Route path="/F24-work-term-report" element={<Magnet />} />
+          <Route 
+            path="/F24-work-term-report" 
+            element={
+              <>
+                <Magnet />
+                <Footer />
+                </>
+              } 
+              />
           </Routes>
     </div>
     </Router>
