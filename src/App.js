@@ -1,4 +1,10 @@
-import {HashRouter as Router, Routes, Route } from "react-router-dom";
+import React from "react";
+import {
+  HashRouter as Router,
+  Routes,
+  Route,
+  // useLocation,
+} from "react-router-dom";
 import Header from "./pages/Header";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -8,6 +14,16 @@ import Contact from "./pages/Contact";
 import Footer from "./pages/Footer";
 import Magnet from "./pages/reports/Magnet";
 
+// function ScrollToTop() {
+//   const { pathname } = useLocation();
+
+//   React.useEffect(() => {
+//     window.scrollTo(0, 0);
+//   }, [pathname]);
+
+//   return null;
+// }
+
 function App() {
   return (
     <Router>
@@ -15,7 +31,7 @@ function App() {
       <Routes>
           {/* Main Page with all sections */}
           <Route
-            path="/my-portfolio"
+            path="/"
             element={
               <>
                 <Header />
@@ -44,5 +60,54 @@ function App() {
     </Router>
   );
 }
+
+
+// function Layout() {
+//   return (
+//     <>
+//       <Routes>
+//         {/* Main Page with all sections */}
+//         <Route
+//           path="/"
+//           element={
+//             <>
+//               <Header />
+//               <Home />
+//               <About />
+//               <Projects />
+//               <Journey />
+//               <Contact />
+//               <Footer />
+//             </>
+//           }
+//         />
+        
+//         {/* Work Term Report Page */}
+//         <Route 
+//           path="/F24-work-term-report" 
+//           element={
+//             <>
+//               <Magnet />
+//               <Footer />
+//             </>
+//           } 
+//         />
+//       </Routes>
+//     </>
+//   );
+// }
+
+
+// function App() {
+//   return (
+//     <Router>
+//       <div className="font-text bg-beige text-center text-calc-size">
+//       <ScrollToTop />
+//       <Layout />
+//       </div>
+//     </Router>
+//   );
+// }
+
 
 export default App;
