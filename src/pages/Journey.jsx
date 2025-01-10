@@ -3,6 +3,18 @@ import { useNavigate } from "react-router-dom";
 
 const work = () => [
   {
+    position: "Residence Assistance",
+    company: "@University of Guelph Student Housing",
+    time: "August 2023 - Present",
+    description: "This role strengthened my leadership and conflict resolution skills. Beyond enforcing building policies and safety protocols, I fostered a positive community by facilitating engaging and fun events. I built meaningful relationships with students, helping them feel a sense of belonging and security.",
+  },
+  {
+    position: "Software Developer",
+    company: "@Magnet Forensics",
+    time: "September 2024 - December 2024",
+    description: "-"
+  },
+  {
     position: "Digital Marketing Designer",
     company: "@Google Developer Student Club",
     time: "January 2024 - May 2024",
@@ -13,12 +25,6 @@ const work = () => [
     company: "@University of Guelph",
     time: "January 2024 - April 2024",
     description: "Due to my passion for mathematical concepts, I enjoyed holding tutorials and office hours for Discrete Mathematics. I provided clear guidance to simplify complex applications, ensuring students easily grasped the material. I built strong relationships with many students and found it fulfilling to witness their growth in problem solving. Through this role, I discovered a genuine love for teaching and helping others succeed.",
-  },
-  {
-    position: "Residence Assistance",
-    company: "@University of Guelph Student Housing",
-    time: "August 2023 - April 2024",
-    description: "This role strengthened my leadership and conflict resolution skills. Beyond enforcing building policies and safety protocols, I fostered a positive community by facilitating engaging and fun events. I built meaningful relationships with students, helping them feel a sense of belonging and security.",
   },
   {
     position: "Front-End Developer",
@@ -42,6 +48,10 @@ const Journey = () => {
     setHoveredIndex(null); //set to null when the mouse leave
   };
   const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/F24-work-term-report");
+    window.scrollTo(0, 0); // Scrolls to the top of the page
+  };
 
   return (
     <section id="journey" className="md:mb-24">
@@ -51,17 +61,21 @@ const Journey = () => {
           onMouseEnter={() => handleMouseEnter(index)}
           onMouseLeave={handleMouseLeave}
         >
-          <div className="mw-[90px]">
+          <div className="w-1/3">
             <p className="text-base md:text-xl text-right animate-fade-in-zoom2">{experience.time}</p>
           </div>
           <div className="text-left md:pl-8 md:w-[63%]">
             <p className="font-sub font-bold pr-1 text-xl md:text-2xl inline-block animate-fade-in-zoom3">{experience.position}</p>
             <p className={`font-sub text-base font-[600] inline-block italic duration-200 ${hoveredIndex !== null && hoveredIndex === index ? 'text-green duration-200':''}`}>{experience.company}</p>
             <p className="text-sm md:text-base pt-2 animate-fade-in-zoom4">{experience.description}</p>
+            {experience.company === "@Magnet Forensics" && (
+              // <button className="bg-star text-brown bg-opacity-70 text-sm px-10 py-2 rounded-full shadow-sm hover:bg-opacity-100 transition transition-500 animate-fade-in-zoom3" onClick={() =>navigate("/F24-work-term-report")}>View Work Term Report</button>
+              <button className="bg-transparent border-brown border-2 border-opacity-10 text-brown text-sm px-10 py-2 rounded-full shadow-sm hover:bg-brown hover:bg-opacity-20 hover:text-beige transition transition-500 animate-fade-in-zoom3" onClick={handleClick}>View Work Term Report</button>
+            )}
           </div>
         </div>
       ))}
-      <button className="bg-green text-yellow text-base md:text-2xl font-bold p-1.5 w-32 md:w-44 rounded-xl shadow-lg transition-color hover:bg-forest relative top-[-30px] animate-fade-in-zoom4" onClick={() =>navigate("/F24-work-term-report")}>Magnet Work Term Report</button>
+      
       </section>
   );
 };

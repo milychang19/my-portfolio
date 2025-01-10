@@ -19,6 +19,8 @@ module.exports = {
         star: "#F4CD94", //tag3
         sky: "#AEBFD5", //project name
         quartz: "#EAC4BB", //company description
+        aloe: "#85A69B", //goal tabs
+        grey: "#DCDBCF", //goal tabs
       },
       boxShadow: {
         card: "0px 0px 10px rgba(0, 0, 0, 0.1)",
