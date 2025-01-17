@@ -14,15 +14,6 @@ import Contact from "./pages/Contact";
 import Footer from "./pages/Footer";
 import Magnet from "./pages/reports/Magnet";
 
-// function ScrollToTop() {
-//   const { pathname } = useLocation();
-
-//   React.useEffect(() => {
-//     window.scrollTo(0, 0);
-//   }, [pathname]);
-
-//   return null;
-// }
 
 function App() {
   return (
