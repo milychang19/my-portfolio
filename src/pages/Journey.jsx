@@ -17,7 +17,7 @@ const work = () => [
   {
     position: "Digital Marketing Designer",
     company: "@Google Developer Student Club",
-    time: "January 2024 - May 2024",
+    time: "January 2024 - Present",
     description: "I gained valuable experience in event organization and digital promotion. I assisted in workshops and supported the groundwork executions. By creating sponsorship and hacker packages, as well as designing social media posts, I optimized the promotion and the flow of our GDSC hackathon event.",
   },
   {
