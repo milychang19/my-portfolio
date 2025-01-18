@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import { useNavigate } from "react-router-dom";
+import { MdArrowOutward } from "react-icons/md";
+
 
 const work = () => [
   {
@@ -12,7 +14,7 @@ const work = () => [
     position: "Software Developer",
     company: "@Magnet Forensics",
     time: "September 2024 - December 2024",
-    description: "-"
+    description: "I was honored to be part of the Computer Artifacts team, contributing to tools that deliver justice and security to the community. From assisting with parsing photo hashes to performing extensive debugging for high-precision solutions, this experience equipped me with practical skills in digital forensics and deepened my passion for creating solutions that make a positive difference in the world."
   },
   {
     position: "Digital Marketing Designer",
@@ -64,14 +66,18 @@ const Journey = () => {
           <div className="w-1/3">
             <p className="text-base md:text-xl text-right animate-fade-in-zoom2">{experience.time}</p>
           </div>
-          <div className="text-left md:pl-8 md:w-[63%]">
+          <div className="text-left md:pl-8 md:w-[63%] cursor-pointer"
+            {...(experience.company === "@Magnet Forensics" ? { onClick: handleClick } : {})}>  
+
             <p className="font-sub font-bold pr-1 text-xl md:text-2xl inline-block animate-fade-in-zoom3">{experience.position}</p>
+            
             <p className={`font-sub text-base font-[600] inline-block italic duration-200 ${hoveredIndex !== null && hoveredIndex === index ? 'text-green duration-200':''}`}>{experience.company}</p>
-            <p className="text-sm md:text-base pt-2 animate-fade-in-zoom4">{experience.description}</p>
             {experience.company === "@Magnet Forensics" && (
+              <MdArrowOutward className={` inline-block size-7 ${hoveredIndex !== null && hoveredIndex === index ? 'fill-green duration-200':''}`}/>
               // <button className="bg-star text-brown bg-opacity-70 text-sm px-10 py-2 rounded-full shadow-sm hover:bg-opacity-100 transition transition-500 animate-fade-in-zoom3" onClick={() =>navigate("/F24-work-term-report")}>View Work Term Report</button>
-              <button className="bg-transparent border-brown border-2 border-opacity-10 text-brown text-sm px-10 py-2 rounded-full shadow-sm hover:bg-brown hover:bg-opacity-20 hover:text-beige transition transition-500 animate-fade-in-zoom3" onClick={handleClick}>View Work Term Report</button>
+              // <button className="bg-transparent border-brown border-2 border-opacity-10 text-brown text-sm px-10 py-2 rounded-full shadow-sm hover:bg-brown hover:bg-opacity-20 hover:text-beige transition transition-500 animate-fade-in-zoom3" onClick={handleClick}>View Work Term Report</button>
             )}
+            <p className="text-sm md:text-base pt-2 animate-fade-in-zoom4">{experience.description}</p>
           </div>
         </div>
       ))}
