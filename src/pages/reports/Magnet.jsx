@@ -35,7 +35,7 @@ const job = [
 With the rapid evolution of technology, staying ahead meant frequently updating our product to accommodate new features and changes. My work involved tasks like `,
   <strong>updating parsers</strong>,
   ",", 
-  <strong>improving data accuracy</strong>,
+  <strong> improving data accuracy</strong>,
   ", and ",
   <strong>researching new version updates</strong>,
   ", all while ensuring our tools remained reliable and effective."
