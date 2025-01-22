@@ -61,8 +61,8 @@ const experience = [
 ` and deepen my understanding of the subject.
 
 One of the most impactful projects I worked on involved `,
-<strong>photo hashing data</strong>,
-` for missing and exploited child investigations. It was incredibly humbling to contribute to such meaningful work, knowing that our efforts could make a real difference in the world.
+<strong>calculating photo hashing data</strong>,
+` to aid investigations around missing and exploited children. It was incredibly humbling to contribute to such meaningful work, knowing that our efforts could make a real difference in the world.
 
 Another highlight was `,
 <strong>creating a new artifact</strong>,
