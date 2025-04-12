@@ -16,10 +16,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-rose shadow-sm flex justify-start md:justify-items-start items-center px-5"><img src={logo} alt="" className="hidden md:block h-20 w-20 max-w-full mr-10" onClick={() => handleScroll("home")}/>
           <ul className="flex gap-10">
             {/* <li className="cursor-pointer box-border text-base md:text-xl inline-block duration-300 animate-fade-in-zoom1" onClick={() => handleScroll("home")}>about me</li> */}
-            <li className="cursor-pointer box-border text-base md:text-xl inline-block duration-300 animate-fade-in-zoom1 relative group" onClick={() => handleScroll("home")}>about me
-              <span className="absolute left-0 bottom-0 w-full h-[1px] bg-[#eac4bb]"></span>
-              <span className="absolute left-0 bottom-0 w-0 h-[1px] group-hover:w-full group-hover:bg-brown transition-all duration-1000"></span>
-            </li>
+            <li className="cursor-pointer box-border text-base md:text-xl inline-block duration-300 animate-fade-in-zoom1 underline-hover" onClick={() => handleScroll("home")}>about me</li>
             <li className="cursor-pointer box-border text-base md:text-xl inline-block duration-300 animate-fade-in-zoom1 underline-hover" onClick={() => handleScroll("projects")}>project</li>
             <li className="cursor-pointer box-border text-base md:text-xl inline-block duration-300 animate-fade-in-zoom1 underline-hover" onClick={() => handleScroll("journey")}>my journey</li>
             {/* <li className="cursor-pointer box-border text-base md:text-xl inline-block duration-300 animate-fade-in-zoom1">art gallery</li> */}

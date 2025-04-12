@@ -3,18 +3,11 @@ import { MdArrowOutward } from "react-icons/md";
 
 const records = () => [
   {
-    name: "ResShiftGenerator",
-    link: "https://github.com/milychang19/ResShiftGenerator",
-    image: require("../elements/project-card1.jpg"),
-    description: "A full-stack application that minimizes human errors in shift scheduling. By implementing SQLite and NumPy, it efficiently parses and integrates CSV files and manages the structured team database.",
-    tags: ["Python", "HTML", "CSS"],
-  },
-  {
-    name: "BattleshipGameAI",
-    link: "https://github.com/milychang19/BattleshipGameAI",
-    image: require("../elements/project-card2.jpg"),
-    description: "A game involving Machine Learning and AI algorithm to analyze and predict opponents' battleship placements. Utilized UML design and object-oriented development principles to enhance gameplay and establish a robust and reliable system.",
-    tags: ["Java", "OOP"],
+    name: "frij.io",
+    link: "https://github.com/megdcosta/frijio",
+    image: require("../elements/project-card5.jpg"),
+    description: "A food management app that tracks inventory, splits household expenses, and suggests AI-powered recipes. By leveraging Google Vision API for receipt scanning (OCR) and Perplexity AI for recipe recommendations and expiration tracking, it addresses food insecurity problem and won the Best AI Award at Hack Canada.",
+    tags: ["Perplexity", "Google Vision", "TypeScript", "Next.js", "Firebase"],
   },
   {
     name: "MancalaGame",
@@ -22,7 +15,35 @@ const records = () => [
     image: require("../elements/project-card3.jpg"),
     description: "Employing object-oriented design and serialization, the game includes game saving and other rule settings. Unit testing was conducted to validate inheritance abstraction and error handling. The robust code demonstrates great modularity and extensibility.",
     tags: ["Java", "OOP", "Swing"],
-  }
+  },
+  {
+    name: "ResShiftGenerator",
+    link: "https://github.com/milychang19/ResShiftGenerator",
+    image: require("../elements/project-card1.jpg"),
+    description: "A full-stack application that minimizes human errors in shift scheduling. By implementing SQLite and NumPy, it efficiently parses and integrates CSV files and manages the structured team database.",
+    tags: ["Python", "HTML", "CSS"],
+  },
+  {
+    name: "Convoco",
+    link: "https://github.com/Quoctynoob/Convoco",
+    image: require("../elements/project-card4.jpg"),
+    description: "A real-time debate platform featuring a genAI mediator that fact-checks, provides translations, and delivers unbiased feedback. The platform uses statistics to generate results and includes a leaderboard for competitive debaters, ensuring fair and objective assessments.",
+    tags: ["TypeScript", "Next.js", "Firebase"],
+  },
+  {
+    name: "Waffles or Pancakes",
+    link: "https://github.com/P541M/waffles-or-pancakes",
+    image: require("../elements/project-card6.jpg"),
+    description: "Employing object-oriented design and serialization, the game includes game saving and other rule settings. Unit testing was conducted to validate inheritance abstraction and error handling. The robust code demonstrates great modularity and extensibility.",
+    tags: ["Node.js", "Express.js", "MongoDB", "Axios", ],
+  },
+  {
+    name: "BattleshipGame",
+    link: "https://github.com/milychang19/BattleshipGameAI",
+    image: require("../elements/project-card2.jpg"),
+    description: "A game involving Machine Learning and AI algorithm to analyze and predict opponents' battleship placements. Utilized UML design and object-oriented development principles to enhance gameplay and establish a robust and reliable system.",
+    tags: ["Java", "OOP"],
+  },
 ]
 
 const tagColors = ["bg-coral", "bg-mint", "bg-star"];
@@ -42,7 +63,7 @@ const Projects = () => {
     <section id="projects" className="mb-12">
       <h1 className="font-sub text-4xl md:text-5xl font-bold p-10 animate-fade-in-zoom1">project highlights</h1>
       <div class="overflow-x-auto py-5 px-5">
-      <div className="inline-flex mx-5 gap-x-10 place-content-center">
+      <div className="inline-flex mx-5 gap-x-10 place-content-center scroll-pl-10">
         {projectRecords.map((project, index) => (
           <div key={index} className={`bg-sage shadow-card rounded-[50px] p-5 py-8 w-80 ease-in-out transition-all duration-300 animate-fade-in-zoom2 ${
             hoveredIndex === index ? 'drop-shadow-card -translate-y-1' : ''}`}
