@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import Header from "./pages/Header";
 import Home from "./pages/Home";
-import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Journey from "./pages/Journey";
 import Contact from "./pages/Contact";
@@ -27,7 +26,6 @@ function App() {
               <>
                 <Header />
                 <Home />
-                <About />
                 <Projects />
                 <Journey />
                 <Contact />

@@ -57,7 +57,7 @@ const Journey = () => {
 
   return (
     <section id="journey" className="md:mb-24">
-      <h1 className="font-sub text-4xl md:text-5xl font-bold text-brown p-10 animate-fade-in-zoom1">my journey</h1>
+      <h1 className="font-sub text-4xl md:text-5xl font-bold p-10 animate-fade-in-zoom1">my journey</h1>
       {workExperiences.map((experience, index) => (
         <div key={index} className={`md:flex mb-10 mx-8 md:mx-40 justify-center duration-300 hover:translate-x-1 ${hoveredIndex !== null && hoveredIndex !== index ? 'opacity-60' : ''}`}
           onMouseEnter={() => handleMouseEnter(index)}
@@ -73,7 +73,7 @@ const Journey = () => {
             
             <p className={`font-sub text-base font-[600] inline-block italic duration-200 ${hoveredIndex !== null && hoveredIndex === index ? 'text-green duration-200':''}`}>{experience.company}</p>
             {experience.company === "@Magnet Forensics" && (
-              <MdArrowOutward className={`inline-block size-7 ${hoveredIndex !== null && hoveredIndex === index ? 'fill-green duration-200':''}`}/>
+              <MdArrowOutward className={`inline-block size-5 ${hoveredIndex !== null && hoveredIndex === index ? 'fill-green duration-200':''}`}/>
               // <button className="bg-star text-brown bg-opacity-70 text-sm px-10 py-2 rounded-full shadow-sm hover:bg-opacity-100 transition transition-500 animate-fade-in-zoom3" onClick={() =>navigate("/F24-work-term-report")}>View Work Term Report</button>
               // <button className="bg-transparent border-brown border-2 border-opacity-10 text-brown text-sm px-10 py-2 rounded-full shadow-sm hover:bg-brown hover:bg-opacity-20 hover:text-beige transition transition-500 animate-fade-in-zoom3" onClick={handleClick}>View Work Term Report</button>
             )}

@@ -6,26 +6,26 @@ const Header = () => {
     const dest = document.getElementById(id);
     if (dest) {
       window.scrollTo({
-        top: dest.offsetTop - 50, // Adjust for any fixed header or spacing
+        top: dest.offsetTop - 70, // Adjust for any fixed header or spacing
         behavior: "smooth", // Smooth scrolling
       });
     }
   };
 
   return (
-    <section id="header">
-      {/* sticky */}
-      <header className="sticky flex justify-center md:justify-start md:justify-items-start	items-center bg-matcha px-5"><img src={logo} alt="" className="hidden md:block h-24 w-24 max-w-full " onClick={() => handleScroll("header")}/>
-        <nav className="font-sub m-5">
-          <ul className="flex gap-5">
-            <li className="cursor-pointer box-border text-base md:text-2xl w-24 md:w-32 font-[350] hover:font-normal duration-300 animate-fade-in-zoom1" onClick={() => handleScroll("about")}>About Me</li>
-            <li className="cursor-pointer box-border text-base md:text-2xl w-20 md:w-28 font-[350] hover:font-normal duration-300 animate-fade-in-zoom1" onClick={() => handleScroll("projects")}>Projects</li>
-            <li className="cursor-pointer box-border text-base md:text-2xl w-20 md:w-28 font-[350] hover:font-normal duration-300 animate-fade-in-zoom1" onClick={() => handleScroll("journey")}>Journey</li>
-            <li className="cursor-pointer box-border text-base md:text-2xl w-20 md:w-28 font-[350] hover:font-normal duration-300 animate-fade-in-zoom1" onClick={() => handleScroll("contact")}>Contact</li>
+    <header className="sticky top-0 z-50 bg-rose shadow-sm flex justify-start md:justify-items-start items-center px-5"><img src={logo} alt="" className="hidden md:block h-20 w-20 max-w-full mr-10" onClick={() => handleScroll("home")}/>
+          <ul className="flex gap-10">
+            {/* <li className="cursor-pointer box-border text-base md:text-xl inline-block duration-300 animate-fade-in-zoom1" onClick={() => handleScroll("home")}>about me</li> */}
+            <li className="cursor-pointer box-border text-base md:text-xl inline-block duration-300 animate-fade-in-zoom1 relative group" onClick={() => handleScroll("home")}>about me
+              <span className="absolute left-0 bottom-0 w-full h-[1px] bg-[#eac4bb]"></span>
+              <span className="absolute left-0 bottom-0 w-0 h-[1px] group-hover:w-full group-hover:bg-brown transition-all duration-1000"></span>
+            </li>
+            <li className="cursor-pointer box-border text-base md:text-xl inline-block duration-300 animate-fade-in-zoom1 underline-hover" onClick={() => handleScroll("projects")}>project</li>
+            <li className="cursor-pointer box-border text-base md:text-xl inline-block duration-300 animate-fade-in-zoom1 underline-hover" onClick={() => handleScroll("journey")}>my journey</li>
+            {/* <li className="cursor-pointer box-border text-base md:text-xl inline-block duration-300 animate-fade-in-zoom1">art gallery</li> */}
+            <li className="cursor-pointer box-border text-base md:text-xl inline-block duration-300 animate-fade-in-zoom1 underline-hover" onClick={() => handleScroll("contact")}>contact</li>
           </ul>
-        </nav>
-      </header>
-    </section>
+    </header>
   );
 };
 

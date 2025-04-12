@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { MdArrowOutward } from "react-icons/md";
 
 const records = () => [
   {
@@ -39,7 +40,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="mb-12">
-      <h1 className="font-sub text-4xl md:text-5xl font-bold text-brown p-10 animate-fade-in-zoom1">project highlights</h1>
+      <h1 className="font-sub text-4xl md:text-5xl font-bold p-10 animate-fade-in-zoom1">project highlights</h1>
       <div class="overflow-x-auto py-5 px-5">
       <div className="inline-flex mx-5 gap-x-10 place-content-center">
         {projectRecords.map((project, index) => (
@@ -49,9 +50,11 @@ const Projects = () => {
             onMouseLeave={handleMouseLeave} 
           >
             <img src={project.image} alt="" className="h-40 object-cover animate-fade-in-zoom3"></img>
-            <h3 className={`font-title text-brown relative inline-block w-max pb-4 z-20 after:absolute after:bg-sky after:h-8 after:bottom-0 after:w-full after:block after:scale-y-50 after:duration-300 after:ease-out after:transition-transform after:-z-10 animate-fade-in-zoom3 ${hoveredIndex === index ? 'after:bottom-2 after:scale-y-[80%]' : ''}`}>
-              <a href={project.link} target="_blank" rel="noopener noreferrer">{project.name}</a></h3>
-            <p className="text-sm md:text-base text-justify text-brown my-1 animate-fade-in-zoom4">{project.description}</p>
+            <h3 className={`font-title relative inline-flex items-baseline w-max pb-4 z-20 after:absolute after:bg-sky after:h-8 after:bottom-0 after:w-full after:block after:scale-y-50 after:duration-300 after:ease-out after:transition-transform after:-z-10 animate-fade-in-zoom3 ${hoveredIndex === index ? 'after:bottom-2 after:scale-y-[80%]' : ''} whitespace-nowrap`}>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">{project.name}</a>
+              <MdArrowOutward className="w-4 align-baseline" />
+            </h3>
+            <p className="text-sm md:text-base text-justify my-1 animate-fade-in-zoom4">{project.description}</p>
             <ul className="flex gap-2 mt-2">
               {project.tags.map((tag, index) => (
                 <li key={index} className={`text-xs md:text-base rounded-2xl w-fit px-4 py-1 drop-shadow animate-fade-in-zoom4 ${tagColors[index % tagColors.length]}`}>{tag}</li>

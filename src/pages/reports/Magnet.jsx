@@ -263,11 +263,11 @@ const Magnet = () => {
   return (
     <div className="text-lg">
       <section id="introduction" className="py-8 px-48">
-        <h1 className="font-sub text-4xl md:text-5xl font-bold text-brown pt-10 animate-fade-in-zoom1">my journey as a Software Developer <br/> with Magnet Forensics</h1>
+        <h1 className="font-sub text-4xl md:text-5xl font-bold pt-10 animate-fade-in-zoom1">my journey as a Software Developer <br/> with Magnet Forensics</h1>
           <p className="w-3/4 text-center place-self-center py-5">{intro}</p>
         <hr className="border-brown opacity-20 mx-14"></hr>
         <div className="p-10">
-          <h2 className="font-sub font-bold text-4xl text-brown">About Magnet Forensics</h2>
+          <h2 className="font-sub font-bold text-4xl">about Magnet Forensics</h2>
           <h3 className="font-sub font-bold text-green italic">Unlock the Truth. Protect the Innocent.</h3>
           <div className="bg-quartz bg-opacity-50 m-5 mb-0 p-14 rounded-[50px] shadow-md">
             <p style={{ whiteSpace: "pre-line" }}>{company}</p>
@@ -278,7 +278,7 @@ const Magnet = () => {
       <section id="responsibilities" className="rounded-[50px] bg-matcha">
         <div className="py-8 px-48">
           <div className="py-4">
-            <h2 className="font-sub font-bold text-4xl text-forest py-3">A Glimpse into My Job</h2>
+            <h2 className="font-sub font-bold text-4xl text-forest py-3">a Glimpse into My Job</h2>
             <p style={{ whiteSpace: "pre-line" }} className="m-4 px-16">{job}</p>
           </div>
           <div className="rounded-[50px] bg-white bg-opacity-50 text-left px-14 py-8 m-2 w-3/4 place-self-center shadow-lg">
@@ -306,7 +306,7 @@ const Magnet = () => {
       <section>
       
         <div className="py-8 px-64">
-          <h2 className="font-sub font-bold text-brown text-3xl py-3">Why <span className="text-blue">Precision</span> is Key at Magnet Forensics</h2>
+          <h2 className="font-sub font-bold text-3xl py-3">Why <span className="text-blue">Precision</span> is Key at Magnet Forensics</h2>
           <div className="text-left m-4">
             <p>{principle1}</p>
             <p>This focus on precision influenced how I approached my tasks, such as:</p>
@@ -321,7 +321,7 @@ const Magnet = () => {
       <hr className="border-brown opacity-20 mx-64"></hr>
 
       <section id="goals" className="px-64">
-        <h2 className="font-sub font-bold text-brown text-4xl pt-6">Goals & Growth</h2>
+        <h2 className="font-sub font-bold text-4xl pt-6">goals & growth</h2>
         <h3 className="font-sub font-bold text-green italic">Learning Outcomes</h3>
 
         <ul className="flex mt-4">
@@ -337,14 +337,14 @@ const Magnet = () => {
         ))}
         </ul>
 
-        <div className={`p-14 rounded-[50px] rounded-tl-none text-brown ${currentGoal.color} h-96 z-20 relative shadow-md align-middle`}>
+        <div className={`p-14 rounded-[50px] rounded-tl-none ${currentGoal.color} h-96 z-20 relative shadow-md align-middle`}>
           <h2 className="font-sub font-bold text-xl mb-3">{currentGoal.title}</h2>
           <p style={{ whiteSpace: "pre-line" }}>{currentGoal.results}</p>
         </div>
       </section>
 
       <section id="acknowledgement" className="py-8 px-64">
-        <h2 className="font-sub font-bold text-brown text-4xl py-7">Acknowledgement</h2>
+        <h2 className="font-sub font-bold text-4xl py-7">acknowledgement</h2>
         <p className="text-left" style={{ whiteSpace: "pre-line" }}>{conclude}</p>
       </section>
   

@@ -1,18 +1,49 @@
 import React from 'react';
 import portrait from '../elements/portrait.jpg';
-import title from '../elements/name-title.png';
 import resume from '../elements/resume.pdf';
+import { FiLinkedin, FiGithub, FiMail } from "react-icons/fi";
 
 const Home = () => {
   return (
     <section id="home">
-      <img src={title} alt="" className="inline-block w-96 md:w-1/2 m-5 animate-fade-in-zoom1 md:hidden"></img>
-         <svg viewBox="0 0 500 100" className="hidden md:block animate-fade-in-zoom2">
-          <path id="curve" fill="transparent" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
-          <text x="20%" className="font-title text-4xl fill-green"><textPath href="#curve">Emily Chang</textPath></text>
-        </svg> 
-        <img src={portrait} alt="" className="w-1/3 md:w-1/4 h-auto mx-auto rounded-full justify-center relative -top-[60px] lg:-top-[80px] shadow-md animate-fade-in-zoom3"/>
-      <a href={resume} title="Resume" target="_blank" rel="noreferrer"><button className="bg-green text-yellow text-base md:text-2xl font-bold p-1.5 w-32 md:w-44 rounded-xl shadow-lg transition-color hover:bg-forest relative top-[-30px] animate-fade-in-zoom4">Resume</button></a>
+      <div className="flex pt-36 px-20 justify-end">
+        <div className="w-[22%] p-4">
+          <img src={portrait} alt="" className="mt-8 rounded-full shadow-sm animate-fade-in-zoom3 mx-auto"/>
+          <a href={resume} title="Resume" target="_blank" rel="noreferrer">
+            <button className="text-base relative group">view my resume
+              <span className="absolute left-0 bottom-0 w-full h-[1px] bg-matcha"></span>
+              <span className="absolute left-0 bottom-0 w-0 h-[1px] group-hover:w-full group-hover:bg-brown transition-all duration-1000"></span>
+            </button>
+            </a>
+          <div className="flex flex-row justify-center gap-3 py-3">
+            <a href="https://www.linkedin.com/in/emily-chang-485962234/" target="_blank" rel="noreferrer" title="LinkedIn"><FiLinkedin/></a>
+            <a href="https://github.com/milychang19" target="_blank" rel="noreferrer" title="GitHub"><FiGithub/></a>
+            <a href="mailto:emily0109.ec@gmail.com" title="emily0109.ec@gmail.com"><FiMail/></a>
+          </div>
+        </div>
+        <div className="w-2/3 p-4 text-left gap-5 flex-col flex">
+          <h1 className="font-sub font-bold text-6xl">emily chang</h1>
+          <ul className="grid gap-1 text-base">
+            <li className="list-square hover:translate-x-1 duration-300 ease-out transition-all">computer science, mathematics <span className="underline">@UofGuelph</span></li>
+            <li className="list-square hover:translate-x-1 duration-300 ease-out">upcoming VR/AI developer @GreenContributor (summer 2025)</li>
+            <li className="list-square hover:translate-x-1 duration-300 ease-out">prev software developer @Magnet Forensics (fall 2024)</li>
+            <li className="list-square hover:translate-x-1 duration-300 ease-out">recently:
+              <ul className="grid gap-1 pl-6">
+                <li className="list-hollow">created frij.io to address food insecurity with smart food management (Best AI @HackCanada)</li>
+                <li className="list-hollow">created debating platform with unbiased mediator (@GenAIGenesis)</li>
+              </ul></li>
+            <li className="list-square hover:translate-x-1 duration-300 ease-out">teaching assistant for discrete mathematics, math tutor in high school</li>
+            <li className="list-square hover:translate-x-1 duration-300 ease-out">residence assistant since August 2023</li>
+            <li className="list-square hover:translate-x-1 duration-300 ease-out">enjoy graphic designs, cryptography and more!</li>
+          </ul>
+        </div>
+      </div>
+      <div className="flex flex-col items-center py-12">
+        <div className="flex flex-col items-center cursor-pointer">
+          <span className="text-4xl mb-4">↓</span>
+          <p className="text-lg font-semibold text-gray-800">read more</p>
+        </div>
+      </div>
     </section>
   );
 };

@@ -5,7 +5,8 @@
 /* global style */
 body {
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  color: #1F1A12;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -13,4 +14,53 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.list-square::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #1F1A12;
+  transform: rotate(-45deg);
+  margin-right: 10px; 
+  vertical-align: middle;
+  transition: transform 0.3s ease-out;
+}
+
+.list-square:hover::before {
+  transform: rotate(0deg) scale(1.2); /* Rotate to square and enlarge on hover */
+}
+
+.list-hollow::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border-width: 1.5px;
+  border-color: #1F1A12;
+  margin-right: 10px; /* space between bullet and text */
+  vertical-align: middle; /* align the square with the text */
+}
+
+.underline-hover {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-hover::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%; /* Start with 0 width */
+  height: 1px;
+  background-color: #F8E9DD; /* Matcha color */
+  transition: width 0.5s ease-in-out, background-color 1s; /* Smooth transition for width and color */
+}
+
+.underline-hover:hover::before {
+  width: 100%; /* Grow width to full */
+  background-color: #1F1A12; /* Change color to brown */
 }
