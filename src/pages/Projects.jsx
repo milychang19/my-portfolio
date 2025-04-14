@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
-import { MdArrowOutward } from "react-icons/md";
+// import { MdArrowOutward } from "react-icons/md";
 
 const records = () => [
   {
     name: "frij.io",
     link: "https://github.com/megdcosta/frijio",
     image: require("../elements/project-card5.jpg"),
-    description: "A food management app that tracks inventory, splits household expenses, and suggests AI-powered recipes. By leveraging Google Vision API for receipt scanning (OCR) and Perplexity AI for recipe recommendations and expiration tracking, it addresses food insecurity problem and won the Best AI Award at Hack Canada.",
-    tags: ["Perplexity", "Google Vision", "TypeScript", "Next.js", "Firebase"],
+    description: "A food management app that tracks household pantry, splits expenses, and suggests AI-powered recipes. By leveraging Google Vision API for receipt scanning (OCR) and Perplexity AI for recipe recommendations and expiration tracking, it addresses food insecurity problem and won the Best AI Award at Hack Canada.",
+    tags: ["Perplexity", "Next.js", "Firestore"],
   },
   {
     name: "MancalaGame",
@@ -34,8 +34,8 @@ const records = () => [
     name: "Waffles or Pancakes",
     link: "https://github.com/P541M/waffles-or-pancakes",
     image: require("../elements/project-card6.jpg"),
-    description: "Employing object-oriented design and serialization, the game includes game saving and other rule settings. Unit testing was conducted to validate inheritance abstraction and error handling. The robust code demonstrates great modularity and extensibility.",
-    tags: ["Node.js", "Express.js", "MongoDB", "Axios", ],
+    description: "A fun interactive web app where users vote between waffles and pancakes to settle the age-old debate. Developed with Psalm Eleazar, who handled the backend using React and Axios, while I focused on the creative aspects of front-end design and user experience.",
+    tags: ["Node.js", "Express.js", "Axios", "MongoDB"],
   },
   {
     name: "BattleshipGame",
@@ -46,7 +46,7 @@ const records = () => [
   },
 ]
 
-const tagColors = ["bg-coral", "bg-mint", "bg-star"];
+const tagColors = ["bg-coral", "bg-mint", "bg-star", "bg-star"];
 
 const Projects = () => {
   const projectRecords = records();
@@ -63,22 +63,24 @@ const Projects = () => {
     <section id="projects" className="mb-12">
       <h1 className="font-sub text-4xl md:text-5xl font-bold p-10 animate-fade-in-zoom1">project highlights</h1>
       <div class="overflow-x-auto py-5 px-5">
-      <div className="inline-flex mx-5 gap-x-10 place-content-center scroll-pl-10">
+      <div className="inline-flex mx-5 gap-x-10 place-content-center scroll-auto snap-x snap-normal snap-proximity pl-40">
         {projectRecords.map((project, index) => (
-          <div key={index} className={`bg-sage shadow-card rounded-[50px] p-5 py-8 w-80 ease-in-out transition-all duration-300 animate-fade-in-zoom2 ${
+          <div key={index} className={`bg-sage shadow-card rounded-[50px] p-5 py-8 w-80 snap-start ease-in-out transition-all duration-300 animate-fade-in-zoom2 ${
             hoveredIndex === index ? 'drop-shadow-card -translate-y-1' : ''}`}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave} 
           >
-            <img src={project.image} alt="" className="h-40 object-cover animate-fade-in-zoom3"></img>
+            <img src={project.image} alt="" className="h-40 w-full object-cover animate-fade-in-zoom3"></img>
             <h3 className={`font-title relative inline-flex items-baseline w-max pb-4 z-20 after:absolute after:bg-sky after:h-8 after:bottom-0 after:w-full after:block after:scale-y-50 after:duration-300 after:ease-out after:transition-transform after:-z-10 animate-fade-in-zoom3 ${hoveredIndex === index ? 'after:bottom-2 after:scale-y-[80%]' : ''} whitespace-nowrap`}>
               <a href={project.link} target="_blank" rel="noopener noreferrer">{project.name}</a>
-              <MdArrowOutward className="w-4 align-baseline" />
+              {/* <MdArrowOutward className="w-4 align-baseline" /> */}
             </h3>
             <p className="text-sm md:text-base text-justify my-1 animate-fade-in-zoom4">{project.description}</p>
-            <ul className="flex gap-2 mt-2">
+            <ul className="flex gap-2 mt-2 flex-wrap">
               {project.tags.map((tag, index) => (
-                <li key={index} className={`text-xs md:text-base rounded-2xl w-fit px-4 py-1 drop-shadow animate-fade-in-zoom4 ${tagColors[index % tagColors.length]}`}>{tag}</li>
+                <li key={index} className={`text-xs md:text-sm rounded-2xl w-fit px-4 py-1 drop-shadow animate-fade-in-zoom4 ${tagColors[index % tagColors.length]}`}>
+                  {tag}
+                </li>
               ))}
             </ul>
           </div>
