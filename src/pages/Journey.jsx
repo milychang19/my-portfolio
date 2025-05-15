@@ -5,7 +5,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 const work = () => [
   {
-    position: "Residence Assistance",
+    position: "Residence Assistant",
     company: "@University of Guelph Student Housing",
     time: "August 2023 - Present",
     description: "This role strengthened my leadership and conflict resolution skills. Beyond enforcing building policies and safety protocols, I fostered a positive community by facilitating engaging and fun events. I built meaningful relationships with students, helping them feel a sense of belonging and security.",
