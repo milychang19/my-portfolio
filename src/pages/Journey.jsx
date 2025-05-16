@@ -56,7 +56,7 @@ const Journey = () => {
   };
 
   return (
-    <section id="journey" className="p-8 md:p-0 md:mb-24">
+    <section id="journey" className="p-5 md:p-0 md:mb-24">
       <h1 className="font-sub text-4xl md:text-5xl font-bold pb-10 animate-fade-in-zoom1">my journey</h1>
       {workExperiences.map((experience, index) => (
         <div key={index} className={`md:flex mb-10 mx-8 md:mx-40 justify-center duration-300 md:hover:translate-x-1 ${hoveredIndex !== null && hoveredIndex !== index ? 'opacity-60' : ''}`}

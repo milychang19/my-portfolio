@@ -7,9 +7,9 @@ const Home = () => {
   return (
     <section id="home">
       {/* <div className="flex pt-36 px-20 justify-end"> */}
-      <div className="flex flex-col md:flex-row pt-4 md:pt-32 px-8 md:px-20 justify-center md:justify-end items-center md:items-start">
-        <div className="flex flex-row md:flex-col justify-center py-12 md:w-[22%] md:p-4 gap-4 md:gap-0">
-          <div className="w-[40%] md:w-full md:mt-8">
+      <div className="flex flex-col md:flex-row md:pt-32 px-5 md:px-20 justify-center md:justify-end items-center md:items-start">
+        <div className="flex flex-row md:flex-col justify-center py-8 md:w-[22%] md:p-4 gap-4 md:gap-0">
+          <div className="w-[42%] md:w-full md:mt-8">
             <img src={portrait} alt="" className=" rounded-full shadow-sm animate-fade-in-zoom3 mx-auto"/>
           </div>
           <div className="pt-5 md:pt-0">
