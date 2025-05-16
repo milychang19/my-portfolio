@@ -16,6 +16,13 @@ code {
     monospace;
 }
 
+.list-square {
+  position: relative;
+  padding-left: 1.5rem; /* space for bullet */
+  text-indent: -1rem; /* pull first line left to align with bullet */
+  line-height: 1.5rem; /* optional: tighter line spacing */
+}
+
 .list-square::before {
   content: '';
   display: inline-block;

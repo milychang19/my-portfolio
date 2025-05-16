@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-beige md:bg-rose md:shadow-sm flex justify-between md:justify-start items-center px-5 pt-2 md:pt-0">
-      <img src={logo} alt="" className="z-30 h-16 md:h-20 md:w-20 max-w-full mr-10" onClick={() => handleScroll("home")}/>
+      <img src={logo} alt="" className="z-30 h-16 md:h-20 md:w-20 max-w-full mr-10" onClick={() => {setIsOpen(false); handleScroll("home");}}/>
       <div className="hidden md:block">
         <ul className="flex gap-10">
           <li className="cursor-pointer box-border text-base md:text-xl inline-block duration-300 animate-fade-in-zoom1 underline-hover" onClick={() => handleScroll("home")}>about me</li>
