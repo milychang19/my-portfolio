@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         green: "#095D40", //name title
-        beige: "#FFFFEC", //background
+        beige: "#FFFAEC", //background
         yellow: "#FFA857", //icon
         brown: "#1F1A12", //text
         matcha: "#EFEADD", //header & contact card
