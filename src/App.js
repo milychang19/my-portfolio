@@ -12,6 +12,7 @@ import Journey from "./pages/Journey";
 import Contact from "./pages/Contact";
 import Footer from "./pages/Footer";
 import Magnet from "./pages/reports/Magnet";
+import Green from "./pages/reports/Green";
 
 
 function App() {
@@ -33,7 +34,6 @@ function App() {
               </>
             }
           />
-          
           {/* Work Term Report Page */}
           <Route 
             path="/F24-work-term-report" 
@@ -44,6 +44,16 @@ function App() {
                 </>
               } 
               />
+          <Route 
+            path="/S25-work-term-report" 
+            element={
+              <>
+                <Green />
+                <Footer />
+                </>
+              } 
+              />
+
           </Routes>
     </div>
     </Router>

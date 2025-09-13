@@ -11,6 +11,12 @@ const work = () => [
     description: "This role strengthened my leadership and conflict resolution skills. Beyond enforcing building policies and safety protocols, I fostered a positive community by facilitating engaging and fun events. I built meaningful relationships with students, helping them feel a sense of belonging and security.",
   },
   {
+    position: "VR/AI Developer",
+    company: "@GreenContributor",
+    time: "May 2025 - Aug 2025",
+    description: "-",
+  },
+  {
     position: "Software Developer",
     company: "@Magnet Forensics",
     time: "Sept 2024 - Dec 2024",
@@ -19,7 +25,7 @@ const work = () => [
   {
     position: "Digital Marketing Designer",
     company: "@Google Developer Student Club",
-    time: "Jan 2024 - Present",
+    time: "Jan 2024 - May 2025",
     description: "I gained valuable experience in event organization and digital promotion. I assisted in workshops and supported the groundwork executions. By creating sponsorship and hacker packages, as well as designing social media posts, I optimized the promotion and the flow of our GDSC hackathon event.",
   },
   {
@@ -50,8 +56,13 @@ const Journey = () => {
     setHoveredIndex(null); //set to null when the mouse leave
   };
   const navigate = useNavigate();
-  const handleClick = () => {
+  const handleClickF24 = () => {
     navigate("/F24-work-term-report");
+    window.scrollTo(0, 0); // Scrolls to the top of the page
+  };
+
+  const handleClickS25 = () => {
+    navigate("/S25-work-term-report");
     window.scrollTo(0, 0); // Scrolls to the top of the page
   };
 
@@ -67,13 +78,15 @@ const Journey = () => {
             <p className="text-sm md:text-xl text-right animate-fade-in-zoom2">{experience.time}</p>
           </div>
           <div className="text-left md:pl-8 md:w-[63%] cursor-pointer"
-            {...(experience.company === "@Magnet Forensics" ? { onClick: handleClick } : {})}>  
+          // handle navigation to work term report
+            {...(experience.company === "@Magnet Forensics" ? { onClick: handleClickF24 } : 
+                experience.company === "@GreenContributor" ? { onClick: handleClickS25 } : {})}>
 
             <p className="font-sub font-bold pr-1 text-xl md:text-2xl inline-block animate-fade-in-zoom3">{experience.position}</p>
             
-            <p className={`font-sub text-base font-[600] inline-block italic duration-200 text-green md:text-brown ${hoveredIndex !== null && hoveredIndex === index ? 'md:text-green duration-200':''}`}>{experience.company}</p>
-            {experience.company === "@Magnet Forensics" && (
-              <MdArrowOutward className={`inline-block size-5 fill-green md:fill-brown ${hoveredIndex !== null && hoveredIndex === index ? 'md:fill-green duration-200':''}`}/>
+            <p className={`font-sub text-base font-[600] inline-block italic duration-200 text-green md:text-brown animate-fade-in-zoom3 ${hoveredIndex !== null && hoveredIndex === index ? 'md:text-green duration-200':''}`}>{experience.company}</p>
+            {(experience.company === "@Magnet Forensics" || experience.company === "@GreenContributor") && (
+              <MdArrowOutward className={`inline-block size-5 fill-green md:fill-brown animate-fade-in-zoom3 ${hoveredIndex !== null && hoveredIndex === index ? 'md:fill-green duration-200':''}`}/>
               // <button className="bg-star text-brown bg-opacity-70 text-sm px-10 py-2 rounded-full shadow-sm hover:bg-opacity-100 transition transition-500 animate-fade-in-zoom3" onClick={() =>navigate("/F24-work-term-report")}>View Work Term Report</button>
               // <button className="bg-transparent border-brown border-2 border-opacity-10 text-brown text-sm px-10 py-2 rounded-full shadow-sm hover:bg-brown hover:bg-opacity-20 hover:text-beige transition transition-500 animate-fade-in-zoom3" onClick={handleClick}>View Work Term Report</button>
             )}

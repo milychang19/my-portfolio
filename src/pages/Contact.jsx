@@ -8,7 +8,7 @@ const Contact = () => {
     <section id="contact" className="rounded-[50px] bg-matcha pb-10 md:pb-20">
       <div className="md:flex mx-12 md:mx-32 ">
         <div className="align-center md:w-[60%]">
-          <h1 className="font-sub text-4xl md:text-5xl font-xbold text-green pt-10 pb-4 md:p-10 md:pt-14 animate-fade-in-zoom1">Contact Me</h1> 
+          <h1 className="font-sub text-4xl md:text-5xl font-xbold text-green pt-10 pb-4 md:p-10 md:pt-14 animate-fade-in-zoom1">contact me</h1> 
           <form action="https://getform.io/f/anlexena" method="POST" className="grid"> 
             <input type="text" name="name" className="h-10 md:h-16 rounded-[14px] md:rounded-[20px] indent-2 md:indent-5 mx-5 my-2 md:my-3 text-sm md:text-xl shadow-sm animate-fade-in-zoom2" placeholder="Your Name"></input>
             <input type="email" name="email" className="h-10 md:h-16 rounded-[14px] md:rounded-[20px] indent-2 md:indent-5 mx-5 my-2 md:my-3 text-sm md:text-xl shadow-sm animate-fade-in-zoom2" placeholder="Email"></input>

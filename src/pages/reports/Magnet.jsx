@@ -278,7 +278,7 @@ const Magnet = () => {
       <section id="responsibilities" className="rounded-[50px] bg-matcha">
         <div className="py-8 px-48">
           <div className="py-4">
-            <h2 className="font-sub font-bold text-4xl text-forest py-3">a Glimpse into My Job</h2>
+            <h2 className="font-sub font-bold text-4xl text-forest py-3">a glimpse into my job</h2>
             <p style={{ whiteSpace: "pre-line" }} className="m-4 px-16">{job}</p>
           </div>
           <div className="rounded-[50px] bg-white bg-opacity-50 text-left px-14 py-8 m-2 w-3/4 place-self-center shadow-lg">

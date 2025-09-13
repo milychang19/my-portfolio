@@ -34,7 +34,7 @@ const Home = () => {
               <span className="absolute left-0 bottom-[-2px] w-full h-[1px] bg-matcha"></span>
               <span className="absolute left-0 bottom-[-2px] w-0 h-[1px] group-hover:w-full group-hover:bg-brown transition-all duration-1000"></span>
               </span></a></li>
-            <li className="list-square hover:translate-x-1 duration-300 ease-out">incoming VR/AI developer @<a href="https://greencontributor.org/" target="_black" rel="nonreferrer" title="GreenContributoor"><span className="relative group">GreenContributor
+            <li className="list-square hover:translate-x-1 duration-300 ease-out">prev VR/AI developer @<a href="https://greencontributor.org/" target="_black" rel="nonreferrer" title="GreenContributoor"><span className="relative group">GreenContributor
               <span className="absolute left-0 bottom-[-2px] w-full h-[1px] bg-matcha"></span>
               <span className="absolute left-0 bottom-[-2px] w-0 h-[1px] group-hover:w-full group-hover:bg-brown transition-all duration-1000"></span>
               </span></a> (summer 2025)</li>
