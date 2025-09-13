@@ -14,7 +14,7 @@ const work = () => [
     position: "VR/AI Developer",
     company: "@GreenContributor",
     time: "May 2025 - Aug 2025",
-    description: "-",
+    description: "View my work term report",
   },
   {
     position: "Software Developer",

@@ -63,7 +63,7 @@ const Projects = () => {
     <section id="projects" className="mb-12">
       <h1 className="font-sub text-4xl md:text-5xl font-bold p-10 animate-fade-in-zoom1">project highlights</h1>
       <div class="overflow-x-auto py-5 px-5">
-      <div className="inline-flex mx-5 gap-x-10 place-content-center scroll-auto snap-x snap-normal snap-proximity pl-40">
+      <div className="inline-flex mx-5 gap-x-10 place-content-center scroll-auto snap-x snap-normal snap-proximity pl-10 md:pl-40">
         {projectRecords.map((project, index) => (
           <div key={index} className={`bg-sage shadow-card rounded-[50px] p-5 py-8 w-80 snap-start ease-in-out transition-all duration-300 animate-fade-in-zoom2 ${
             hoveredIndex === index ? 'drop-shadow-card -translate-y-1' : ''}`}

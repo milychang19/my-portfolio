@@ -92,31 +92,31 @@ const Green = () => {
 
     return (
         <div className="text-lg">
-            <section id="introduction" className="py-8 px-48">
+            <button onClick={() => window.history.back()} className="absolute top-10 left-10 px-4 py-2 text-4xl md:text-5xl">↩</button>
+            <section id="introduction" className="py-8 px-5 md:px-48">
                 <h1 className="font-sub text-4xl md:text-5xl font-bold pt-10 animate-fade-in-zoom1">my journey with <br/>⋆˚࿔ GreenContributor 𝜗𝜚˚⋆</h1>
-                <p className="w-3/4 text-center place-self-center py-5">{intro}</p>
-                <hr className="border-brown opacity-20 mx-14"></hr>
-                <div className="p-10">
-                <h2 className="font-sub font-bold text-4xl">about <span className="text-green">GreenContributor</span></h2>
-                {/* <h3 className="font-sub font-bold text-green italic">Unlock the Truth. Protect the Innocent.</h3> */}
-                <div className="bg-[#85a69b] bg-opacity-50 m-5 mb-0 p-14 rounded-[50px] shadow-md">
+                <p className="px-4 md:w-3/4 text-center place-self-center py-5">{intro}</p>
+                <hr className="mx-4 border-brown opacity-20 md:mx-14"></hr>
+                <div className="my-10 px-4 md:px-10">
+                <h2 className="font-sub font-bold">about <span className="text-green">GreenContributor</span></h2>
+                <div className="bg-[#85a69b] bg-opacity-50 my-5 mb-0 p-7 md:p-14 rounded-[50px] shadow-md">
                     <p style={{ whiteSpace: "pre-line" }}>{greenContributor}</p>
                 </div>
                 </div>
             </section>
             <section id="Moore">
-                <div className="bg-sky bg-opacity-70 rounded-[50px] pt-16 px-48 pb-24">
-                <h3 className="text-[#46606f] font-bold text-left ml-16">Fellowship Research Opportunity ⋆˚꩜｡</h3>
+                <div className="bg-sky bg-opacity-70 rounded-[50px] pt-16 px-9 md:px-48 pb-24 mb-10 md:mb-20">
+                <h3 className="text-[#46606f] font-bold text-left md:ml-16 ">Fellowship Research Opportunity ⋆˚꩜｡</h3>
                 <h2 className="font-sub font-bold text-3xl py-3">Moore Institute for Plastic Pollution Research</h2>
-                    <p style={{ whiteSpace: "pre-line" }} className="m-4 px-20">{moore}</p>
-                <div className="flex justify-center gap-8 mt-8">
+                    <p style={{ whiteSpace: "pre-line" }} className="md:m-4 md:px-20">{moore}</p>
+                <div className="flex justify-center gap-4 md:gap-8 mt-8">
                     <img 
                         src={image1} alt=""
-                        className="border-[24px] border-white rounded-lg w-1/3 shadow-sm"
+                        className="border-[12px] md:border-[24px] border-white rounded-lg w-[45%] md:w-1/3 shadow-sm"
                     />
                     <img 
                         src={image2} alt=""
-                        className="border-[24px] border-white rounded-lg w-1/3 shadow-sm"
+                        className="border-[12px] md:border-[24px] border-white rounded-lg w-[45%] md:w-1/3 shadow-sm"
                     />
                 </div>
                 </div>
@@ -124,12 +124,12 @@ const Green = () => {
 
             {/* A glimpse into my role */}
             <section id="responsibilities" className="rounded-[50px] bg-matcha py-12">
-                <div className="px-48">
+                <div className="px-5 md:px-48">
                     <div className="py-4">
-                        <h2 className="font-sub font-bold text-4xl py-3">✧˚ · . major projects . ˚ ✧ .</h2>
-                        <p style={{ whiteSpace: "pre-line" }} className="m-4 px-28">{job}</p>
+                        <h2 className="font-sub font-bold md:py-3">✧˚ · . major projects . ˚ ✧ .</h2>
+                        <p style={{ whiteSpace: "pre-line" }} className="m-4 md:px-28">{job}</p>
                     </div>
-                    <div className="rounded-[50px] bg-white bg-opacity-50 text-left px-14 py-8 m-2 w-3/4 place-self-center shadow-lg">
+                    <div className="rounded-[50px] bg-white bg-opacity-50 text-left p-7 md:px-14 md:py-8 m-2 md:w-3/4 place-self-center shadow-lg text-sm md:text-base">
                         <p className="font-bold mb-2">The technology and tools I leveraged in my role:</p>
                         <li><span className="font-bold">Mobile Dev:</span> Next.js, Flutter (Dart)</li>
                         <li><span className="font-bold">Backend:</span> Express.js (session), RESTful API design, JWT authentication</li>
@@ -138,11 +138,11 @@ const Green = () => {
                         <li><span className="font-bold">Image Processing:</span> Python, OpenCV, ImageJ</li>
                     </div>
                 </div>
-                    <section className="w-full pt-20 pb-10">
+                    <section className="w-full py-10 md:pt-20">
                         <h3 className="font-bold">˙⋆✮ Project 1</h3>
-                        <h2 className="font-sub font-bold text-2xl text-forest py-2">FutureMindsChallenge: App Development</h2>
-                        <img src={project1} alt="decorative horizontal SVG" className="w-full object-cover"/>
-                        <div className="m-5 text-left place-self-center w-1/2">
+                        <h2 className="font-sub font-bold text-xl md:text-2xl text-forest p-2 px-4">FutureMindsChallenge: App Development</h2>
+                        <img src={project1} alt="decorative horizontal SVG" className="h-52 md:h-auto md:w-full object-cover"/>
+                        <div className="m-5 text-left place-self-center px-8 md:p-0 md:w-1/2 text-base md:text-lg">
                             <ul className="list-disc list-inside">
                                 {projectGreen.map((point, index) => (
                                 <li key={index}>{point}</li>
@@ -150,11 +150,11 @@ const Green = () => {
                                 </ul>
                         </div>
                     </section>
-                    <section className="w-full py-10">
+                    <section className="w-full md:py-10">
                         <h3 className="font-bold">˙⋆✮ Project 2</h3>
-                        <h2 className="font-sub font-bold text-2xl text-forest py-2">Automating Microplastic Analysis: Image Processing</h2>
-                        <img src={project2} alt="decorative horizontal SVG" className="w-full object-cover" />
-                        <div className="m-5 text-left place-self-center w-1/2">
+                        <h2 className="font-sub font-bold text-xl md:text-2xl text-forest p-2 px-4">Automating Microplastic Analysis: Image Processing</h2>
+                        <img src={project2} alt="decorative horizontal SVG" className="h-48 md:h-auto md:w-full object-cover" />
+                        <div className="m-5 text-left place-self-center px-8 md:p-0 md:w-1/2 text-base md:text-lg">
                             <p className="pb-5">{myRole}</p>
                             <p>My contributions included:</p>
                             <ul className="list-disc list-inside">
@@ -166,44 +166,44 @@ const Green = () => {
                     </section>
             </section>
 
-            <section id="goals" className="px-64 py-20">
-                <h2 className="font-sub font-bold text-4xl">☆ learning outcomes ☆</h2>
+            <section id="goals" className="px-5 md:px-64 py-20">
+                <h2 className="font-sub font-bold">☆ learning outcomes ☆</h2>
                 <h3 className="font-text font-bold text-green pt-1 italic">Goals & Growth</h3>
+                    <ul className="flex mt-4">
+                    {goals.map((goal, index) => (
+                    <li key={index}>
+                        <button
+                        onClick={() => handleButtonClick(index)}
+                        className={`px-4 py-2 w-20 md:w-32 rounded-t-[30px] md:rounded-t-[50px] ${goal.color} text-white font-sub transition-transform duration-100 ease-in hover:scale-y-[1.15] hover:z-5`}
+                        >
+                        {index + 1}
+                        </button>
+                    </li>
+                    ))}
+                    </ul>
 
-                <ul className="flex mt-4">
-                {goals.map((goal, index) => (
-                <li key={index}>
-                    <button
-                    onClick={() => handleButtonClick(index)}
-                    className={`px-4 py-2 w-32 rounded-t-[50px] ${goal.color} text-white font-sub transition-transform duration-100 ease-in hover:scale-y-[1.15] hover:z-5`}
-                    >
-                    {index + 1}
-                    </button>
-                </li>
-                ))}
-                </ul>
-
-                <div className={`p-14 rounded-[50px] rounded-tl-none ${currentGoal.color} h-96 z-20 relative shadow-md align-middle`}>
-                <h2 className="font-sub font-bold text-xl mb-3">{currentGoal.title}</h2>
-                <p style={{ whiteSpace: "pre-line" }}>{currentGoal.results}</p>
-                </div>
+                    <div className={`p-7 md:p-14 rounded-[50px] rounded-tl-none ${currentGoal.color} h-auto z-20 relative shadow-md align-middle`}>
+                    <h2 className="font-sub font-bold text-lg md:text-xl mb-3">{currentGoal.title}</h2>
+                    <p style={{ whiteSpace: "pre-line" }}>{currentGoal.results}</p>
+                    </div>
             </section>
-            <section id="CaptainCharles" className="py-10 px-64">
-                <h2 className="font-sub font-bold text-4xl">thinking beyong the box</h2>
-                <h3 className="font-bold text-[#46606f] pt-1 italic">Why Action on Sustainability Can't Wait</h3>
-                {/* <img src={image3} alt="" className="w-1/4"/> */}
-                <div className="flex flex-col md:flex-row items-start gap-8 mt-6">
-                    <img src={image3} alt="" className="w-full md:w-[32%] object-cover" />
-                    <div className="flex flex-col gap-4">
-                        <p className="text-left leading-relaxed">During my visit to California, I had the honour of visiting Captain Charles Moore at his home, where he shared a powerful reminder: </p>
+            <section id="CaptainCharles" className="md:py-10 px-5 md:px-64">
+                <h2 className="font-sub font-bold">thinking beyond the box</h2>
+                <h3 className="font-bold text-[#46606f] pt-1 italic">
+                    Why Action on Sustainability Can't Wait
+                </h3>
+                <div className="flex flex-col md:flex-row items-start gap-4 mt-6 justify-center">
+                    <img src={image3} alt="" className="w-2/5 md:w-[32%] object-cover mx-auto md:mx-0"/>
+                    <div className="flex flex-col gap-4 px-4">
+                        <p className="text-left leading-relaxed">During my visit to California, I had the honour of visiting Captain Charles Moore at his home, where he shared a powerful reminder:</p>
                         <p className="text-left leading-relaxed border-l-4 border-gray-400 pl-4 italic my-4">"We can’t wait for the box to be empty before we think outside the box."</p>
                         <p className="text-left leading-relaxed">His words and this experience reminded me that addressing microplastic pollution cannot wait. Meaningful action is needed now before the damage to our oceans and marine life becomes irreversible.</p>
                         <p className="text-left leading-relaxed">What technology can do is create more data and information, which helps people realize the seriousness of the issue and drives the need for urgent action. Through innovative solutions, we can accelerate environmental research and provide people with the tools and insights needed to take action.</p>
                     </div>
                 </div>
             </section>
-            <section id="acknowledgement" className="py-8 px-64">
-                <h2 className="font-sub font-bold text-4xl py-7">acknowledgement</h2>
+            <section id="acknowledgement" className="py-8 px-9 md:px-64">
+                <h2 className="font-sub font-bold py-7">acknowledgement</h2>
                 <p className="text-left" style={{ whiteSpace: "pre-line" }}>{conclude}</p>
             </section>
 

@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  p {
+    @apply text-base md:text-lg;
+  }
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+}
+
 /* global style */
 body {
   margin: 0;
