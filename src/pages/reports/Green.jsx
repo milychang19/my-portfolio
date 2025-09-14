@@ -109,14 +109,14 @@ const Green = () => {
                 <h3 className="text-[#46606f] font-bold text-left text-sm md:text-lg md:ml-16 ">Fellowship Research Opportunity ⋆˚꩜｡</h3>
                 <h2 className="font-sub font-bold text-2xl py-3">Moore Institute for Plastic Pollution Research</h2>
                     <p style={{ whiteSpace: "pre-line" }} className="md:m-4 md:px-20 text-justify">{moore}</p>
-                <div className="flex justify-center gap-4 md:gap-8 mt-8">
+                <div className="flex justify-center gap-2 md:gap-8 mt-8">
                     <img 
                         src={image1} alt=""
-                        className="border-[12px] md:border-[24px] border-white rounded-lg w-[48%] md:w-1/3 shadow-sm"
+                        className="border-[10px] md:border-[24px] border-white rounded-lg w-1/2 md:w-1/3 shadow-sm"
                     />
                     <img 
                         src={image2} alt=""
-                        className="border-[12px] md:border-[24px] border-white rounded-lg w-[48%] md:w-1/3 shadow-sm"
+                        className="border-[10px] md:border-[24px] border-white rounded-lg w-1/2 md:w-1/3 shadow-sm"
                     />
                 </div>
                 </div>
@@ -130,38 +130,37 @@ const Green = () => {
                     </div>
                     <div className="rounded-[50px] bg-white bg-opacity-50 text-left p-7 md:px-14 md:py-8 m-2 md:w-3/4 place-self-center shadow-lg text-sm md:text-base">
                         <p className="font-bold mb-2">The technology and tools I leveraged in my role:</p>
-                        <li><span className="font-bold">Mobile Dev:</span> Next.js, Flutter (Dart)</li>
-                        <li><span className="font-bold">Backend:</span> Express.js (session), RESTful API design, JWT authentication</li>
-                        <li><span className="font-bold">Database & Clouds:</span> MySQL, PostgreSQL, Supabase</li>
-                        <li><span className="font-bold">Tools:</span> Git, Trello, Figma</li>
-                        <li><span className="font-bold">Image Processing:</span> Python, OpenCV, ImageJ</li>
+                        <div className="pl-3">
+                            <li><span className="font-bold">Mobile Dev:</span> Next.js, Flutter (Dart)</li>
+                            <li><span className="font-bold">Backend:</span> Express.js (session), RESTful API design, JWT authentication</li>
+                            <li><span className="font-bold">Database & Clouds:</span> MySQL, PostgreSQL, Supabase</li>
+                            <li><span className="font-bold">Tools:</span> Git, Trello, Figma</li>
+                            <li><span className="font-bold">Image Processing:</span> Python, OpenCV, ImageJ</li>
+                        </div>
                     </div>
                 </div>
                     <section className="w-full py-10 md:pt-20">
                         <h3 className="font-bold">˙⋆✮ Project 1  </h3>
                         <h2 className="font-sub font-bold text-xl md:text-2xl text-forest p-2 px-4">FutureMindsChallenge: App Development</h2>
                         <img src={project1} alt="decorative horizontal SVG" className="hidden md:block w-full" />
-                        <div className="m-5 text-left place-self-center px-8 md:p-0 md:w-1/2 text-base md:text-lg">
-                            <ul className="list-disc list-inside">
-                                {projectGreen.map((point, index) => (
-                                <li key={index}>{point}</li>
-                                ))}
-                                </ul>
+                        <div className="mt-5 px-5 text-left place-self-center pl-12 md:p-0 md:w-1/2 text-base md:text-lg">
+                            {projectGreen.map((point, index) => (
+                            <li key={index}>{point}</li>
+                            ))}
                         </div>
                     </section>
                     <section className="w-full md:py-10">
                         <h3 className="font-bold">˙⋆✮ Project 2  </h3>
                         <h2 className="font-sub font-bold text-xl md:text-2xl text-forest p-2 px-4">Automating Microplastic Analysis: Image Processing</h2>
                         <img src={project2} alt="decorative horizontal SVG" className="hidden md:block w-full"/>
-                        {/* image height 36 for mobile version */}
-                        <div className="m-5 text-left place-self-center px-8 md:p-0 md:w-1/2 text-base md:text-lg">
+                        <div className="m-5 p-5 text-left place-self-center md:p-0 md:w-1/2 text-base md:text-lg">
                             <p className="pb-5">{myRole}</p>
-                            <p>My contributions included:</p>
-                            <ul className="list-disc list-inside">
-                                {projectMoore.map((point, index) => (
-                                    <li key={index}>{point}</li>
-                                    ))}
-                            </ul>
+                            <p className="font-bold">My contributions included:</p>
+                            <div className="pl-2">
+                            {projectMoore.map((point, index) => (
+                                <li key={index}>{point}</li>
+                                ))}
+                                </div>
                             </div>
                     </section>
             </section>
