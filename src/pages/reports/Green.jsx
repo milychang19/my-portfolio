@@ -92,7 +92,7 @@ const Green = () => {
 
     return (
         <div className="text-lg">
-            <button onClick={() => window.history.back()} className="absolute top-5 left-2 md:top-10 md:left-10 px-4 py-2 text-4xl md:text-5xl">↩</button>
+            <button onClick={() => window.history.back()} className="absolute top-5 left-2 md:top-10 md:left-10 px-4 py-2 text-4xl md:text-5xl hidden md:block">↩</button>
             <section id="introduction" className="py-8 px-5 md:px-48">
                 <h1 className="font-sub text-3xl md:text-5xl font-bold pt-10 animate-fade-in-zoom1">my journey with <br/><span className="text-2xl md:text-4xl">⋆˚࿔</span> GreenContributor <span className="text-xl md:text-4xl">𝜗𝜚˚⋆</span></h1>
                 <p className="px-4 md:w-3/4 text-justify place-self-center py-5">{intro}</p>
