@@ -122,7 +122,6 @@ const Green = () => {
                 </div>
             </section>
 
-            {/* A glimpse into my role */}
             <section id="responsibilities" className="rounded-[50px] bg-matcha py-12">
                 <div className="px-5 md:px-48">
                     <div className="md:py-4">
@@ -139,9 +138,9 @@ const Green = () => {
                     </div>
                 </div>
                     <section className="w-full py-10 md:pt-20">
-                        <h3 className="font-bold">˙⋆✮ Project 1</h3>
+                        <h3 className="font-bold">˙⋆✮ Project 1  </h3>
                         <h2 className="font-sub font-bold text-xl md:text-2xl text-forest p-2 px-4">FutureMindsChallenge: App Development</h2>
-                        <img src={project1} alt="decorative horizontal SVG" className="h-36 md:h-auto md:w-full object-cover"/>
+                        <img src={project1} alt="decorative horizontal SVG" className="hidden md:block w-full" />
                         <div className="m-5 text-left place-self-center px-8 md:p-0 md:w-1/2 text-base md:text-lg">
                             <ul className="list-disc list-inside">
                                 {projectGreen.map((point, index) => (
@@ -151,9 +150,10 @@ const Green = () => {
                         </div>
                     </section>
                     <section className="w-full md:py-10">
-                        <h3 className="font-bold">˙⋆✮ Project 2</h3>
+                        <h3 className="font-bold">˙⋆✮ Project 2  </h3>
                         <h2 className="font-sub font-bold text-xl md:text-2xl text-forest p-2 px-4">Automating Microplastic Analysis: Image Processing</h2>
-                        <img src={project2} alt="decorative horizontal SVG" className="h-36 md:h-auto md:w-full object-cover" />
+                        <img src={project2} alt="decorative horizontal SVG" className="hidden md:block w-full"/>
+                        {/* image height 36 for mobile version */}
                         <div className="m-5 text-left place-self-center px-8 md:p-0 md:w-1/2 text-base md:text-lg">
                             <p className="pb-5">{myRole}</p>
                             <p>My contributions included:</p>
