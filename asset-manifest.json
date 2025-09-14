@@ -1,14 +1,12 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.8ed8bc34.css",
-    "main.js": "/my-portfolio/static/js/main.8140ed6a.js",
+    "main.css": "/my-portfolio/static/css/main.c66ab03e.css",
+    "main.js": "/my-portfolio/static/js/main.530a3f44.js",
     "static/media/Project2.svg": "/my-portfolio/static/media/Project2.06a8ebc6dda098d54e3964266dc49f5b.svg",
-    "static/media/Project2Mobile.svg": "/my-portfolio/static/media/Project2Mobile.d34e2e723216bb0e6e44dfa4fb23a156.svg",
     "static/media/IMG_6643.jpg": "/my-portfolio/static/media/IMG_6643.223b5466d2694a4cac5a.jpg",
     "static/media/IMG_1807.jpg": "/my-portfolio/static/media/IMG_1807.48ac0a7cfe9a4c989769.jpg",
     "static/media/IMG_6172.JPG": "/my-portfolio/static/media/IMG_6172.0d13a725255eebcd560f.JPG",
     "static/media/Project1.svg": "/my-portfolio/static/media/Project1.c5f12a39880b7473f33cf34063beb986.svg",
-    "static/media/Project1Mobile.svg": "/my-portfolio/static/media/Project1Mobile.e27fc91bb05cde1120301be847a8db5e.svg",
     "static/media/portrait.jpg": "/my-portfolio/static/media/portrait.a7bdc9885e26fbae3d61.jpg",
     "static/media/contact-logo.png": "/my-portfolio/static/media/contact-logo.4f671210c70d3d48fdc9.png",
     "static/media/resume.pdf": "/my-portfolio/static/media/resume.9584b37b3c36b06ec368.pdf",
@@ -20,11 +18,11 @@
     "static/media/project-card3.jpg": "/my-portfolio/static/media/project-card3.791c8bdc4fb655b1e518.jpg",
     "static/media/logo-ec.png": "/my-portfolio/static/media/logo-ec.c1c26f942a92ddf452e2.png",
     "index.html": "/my-portfolio/index.html",
-    "main.8ed8bc34.css.map": "/my-portfolio/static/css/main.8ed8bc34.css.map",
-    "main.8140ed6a.js.map": "/my-portfolio/static/js/main.8140ed6a.js.map"
+    "main.c66ab03e.css.map": "/my-portfolio/static/css/main.c66ab03e.css.map",
+    "main.530a3f44.js.map": "/my-portfolio/static/js/main.530a3f44.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ed8bc34.css",
-    "static/js/main.8140ed6a.js"
+    "static/css/main.c66ab03e.css",
+    "static/js/main.530a3f44.js"
   ]
 }
