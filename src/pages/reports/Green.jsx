@@ -92,31 +92,31 @@ const Green = () => {
 
     return (
         <div className="text-lg">
-            <button onClick={() => window.history.back()} className="absolute top-10 left-10 px-4 py-2 text-4xl md:text-5xl">↩</button>
+            <button onClick={() => window.history.back()} className="absolute top-5 left-2 md:top-10 md:left-10 px-4 py-2 text-4xl md:text-5xl">↩</button>
             <section id="introduction" className="py-8 px-5 md:px-48">
-                <h1 className="font-sub text-4xl md:text-5xl font-bold pt-10 animate-fade-in-zoom1">my journey with <br/>⋆˚࿔ GreenContributor 𝜗𝜚˚⋆</h1>
-                <p className="px-4 md:w-3/4 text-center place-self-center py-5">{intro}</p>
+                <h1 className="font-sub text-3xl md:text-5xl font-bold pt-10 animate-fade-in-zoom1">my journey with <br/><span className="text-2xl md:text-4xl">⋆˚࿔</span> GreenContributor <span className="text-xl md:text-4xl">𝜗𝜚˚⋆</span></h1>
+                <p className="px-4 md:w-3/4 text-justify place-self-center py-5">{intro}</p>
                 <hr className="mx-4 border-brown opacity-20 md:mx-14"></hr>
-                <div className="my-10 px-4 md:px-10">
+                <div className="my-5 md:my-10 px-4 md:px-10">
                 <h2 className="font-sub font-bold">about <span className="text-green">GreenContributor</span></h2>
-                <div className="bg-[#85a69b] bg-opacity-50 my-5 mb-0 p-7 md:p-14 rounded-[50px] shadow-md">
+                <div className="bg-[#85a69b] bg-opacity-50 my-5 mb-0 p-6 md:p-14 rounded-[50px] shadow-md text-justify">
                     <p style={{ whiteSpace: "pre-line" }}>{greenContributor}</p>
                 </div>
                 </div>
             </section>
             <section id="Moore">
-                <div className="bg-sky bg-opacity-70 rounded-[50px] pt-16 px-9 md:px-48 pb-24 mb-10 md:mb-20">
-                <h3 className="text-[#46606f] font-bold text-left md:ml-16 ">Fellowship Research Opportunity ⋆˚꩜｡</h3>
-                <h2 className="font-sub font-bold text-3xl py-3">Moore Institute for Plastic Pollution Research</h2>
-                    <p style={{ whiteSpace: "pre-line" }} className="md:m-4 md:px-20">{moore}</p>
+                <div className="bg-sky bg-opacity-70 rounded-[50px] pt-16 px-9 md:px-48 pb-12 md:pb-24 mb-10 md:mb-20">
+                <h3 className="text-[#46606f] font-bold text-left text-sm md:text-lg md:ml-16 ">Fellowship Research Opportunity ⋆˚꩜｡</h3>
+                <h2 className="font-sub font-bold text-2xl py-3">Moore Institute for Plastic Pollution Research</h2>
+                    <p style={{ whiteSpace: "pre-line" }} className="md:m-4 md:px-20 text-justify">{moore}</p>
                 <div className="flex justify-center gap-4 md:gap-8 mt-8">
                     <img 
                         src={image1} alt=""
-                        className="border-[12px] md:border-[24px] border-white rounded-lg w-[45%] md:w-1/3 shadow-sm"
+                        className="border-[12px] md:border-[24px] border-white rounded-lg w-[48%] md:w-1/3 shadow-sm"
                     />
                     <img 
                         src={image2} alt=""
-                        className="border-[12px] md:border-[24px] border-white rounded-lg w-[45%] md:w-1/3 shadow-sm"
+                        className="border-[12px] md:border-[24px] border-white rounded-lg w-[48%] md:w-1/3 shadow-sm"
                     />
                 </div>
                 </div>
@@ -125,8 +125,8 @@ const Green = () => {
             {/* A glimpse into my role */}
             <section id="responsibilities" className="rounded-[50px] bg-matcha py-12">
                 <div className="px-5 md:px-48">
-                    <div className="py-4">
-                        <h2 className="font-sub font-bold md:py-3">✧˚ · . major projects . ˚ ✧ .</h2>
+                    <div className="md:py-4">
+                        <h2 className="font-sub font-bold md:py-3"><span className="text-xl">✧˚ · .</span> major projects <span className="text-xl">. ˚ ✧ .</span></h2>
                         <p style={{ whiteSpace: "pre-line" }} className="m-4 md:px-28">{job}</p>
                     </div>
                     <div className="rounded-[50px] bg-white bg-opacity-50 text-left p-7 md:px-14 md:py-8 m-2 md:w-3/4 place-self-center shadow-lg text-sm md:text-base">
@@ -141,7 +141,7 @@ const Green = () => {
                     <section className="w-full py-10 md:pt-20">
                         <h3 className="font-bold">˙⋆✮ Project 1</h3>
                         <h2 className="font-sub font-bold text-xl md:text-2xl text-forest p-2 px-4">FutureMindsChallenge: App Development</h2>
-                        <img src={project1} alt="decorative horizontal SVG" className="h-52 md:h-auto md:w-full object-cover"/>
+                        <img src={project1} alt="decorative horizontal SVG" className="h-36 md:h-auto md:w-full object-cover"/>
                         <div className="m-5 text-left place-self-center px-8 md:p-0 md:w-1/2 text-base md:text-lg">
                             <ul className="list-disc list-inside">
                                 {projectGreen.map((point, index) => (
@@ -153,7 +153,7 @@ const Green = () => {
                     <section className="w-full md:py-10">
                         <h3 className="font-bold">˙⋆✮ Project 2</h3>
                         <h2 className="font-sub font-bold text-xl md:text-2xl text-forest p-2 px-4">Automating Microplastic Analysis: Image Processing</h2>
-                        <img src={project2} alt="decorative horizontal SVG" className="h-48 md:h-auto md:w-full object-cover" />
+                        <img src={project2} alt="decorative horizontal SVG" className="h-36 md:h-auto md:w-full object-cover" />
                         <div className="m-5 text-left place-self-center px-8 md:p-0 md:w-1/2 text-base md:text-lg">
                             <p className="pb-5">{myRole}</p>
                             <p>My contributions included:</p>
@@ -166,7 +166,7 @@ const Green = () => {
                     </section>
             </section>
 
-            <section id="goals" className="px-5 md:px-64 py-20">
+            <section id="goals" className="px-5 md:px-64 py-10 md:py-20">
                 <h2 className="font-sub font-bold">☆ learning outcomes ☆</h2>
                 <h3 className="font-text font-bold text-green pt-1 italic">Goals & Growth</h3>
                     <ul className="flex mt-4">
@@ -174,7 +174,7 @@ const Green = () => {
                     <li key={index}>
                         <button
                         onClick={() => handleButtonClick(index)}
-                        className={`px-4 py-2 w-20 md:w-32 rounded-t-[30px] md:rounded-t-[50px] ${goal.color} text-white font-sub transition-transform duration-100 ease-in hover:scale-y-[1.15] hover:z-5`}
+                        className={`px-4 py-2 w-14 md:w-32 rounded-t-[25px] md:rounded-t-[50px] ${goal.color} text-white font-sub transition-transform duration-100 ease-in hover:scale-y-[1.15] hover:z-5`}
                         >
                         {index + 1}
                         </button>
@@ -182,21 +182,21 @@ const Green = () => {
                     ))}
                     </ul>
 
-                    <div className={`p-7 md:p-14 rounded-[50px] rounded-tl-none ${currentGoal.color} h-auto z-20 relative shadow-md align-middle`}>
-                    <h2 className="font-sub font-bold text-lg md:text-xl mb-3">{currentGoal.title}</h2>
-                    <p style={{ whiteSpace: "pre-line" }}>{currentGoal.results}</p>
+                    <div className={`p-4 md:p-14 rounded-[50px] rounded-tl-none ${currentGoal.color} h-auto z-20 relative shadow-md align-middle`}>
+                    <h2 className="font-sub font-bold text-base md:text-xl mb-3">{currentGoal.title}</h2>
+                    <p style={{ whiteSpace: "pre-line" }} className="text-justify">{currentGoal.results}</p>
                     </div>
             </section>
             <section id="CaptainCharles" className="md:py-10 px-5 md:px-64">
-                <h2 className="font-sub font-bold">thinking beyond the box</h2>
+                <h2 className="font-sub font-bold text-2xl md:text-3xl">thinking beyond the box</h2>
                 <h3 className="font-bold text-[#46606f] pt-1 italic">
                     Why Action on Sustainability Can't Wait
                 </h3>
                 <div className="flex flex-col md:flex-row items-start gap-4 mt-6 justify-center">
                     <img src={image3} alt="" className="w-2/5 md:w-[32%] object-cover mx-auto md:mx-0"/>
-                    <div className="flex flex-col gap-4 px-4">
+                    <div className="flex flex-col gap-4 px-4 ">
                         <p className="text-left leading-relaxed">During my visit to California, I had the honour of visiting Captain Charles Moore at his home, where he shared a powerful reminder:</p>
-                        <p className="text-left leading-relaxed border-l-4 border-gray-400 pl-4 italic my-4">"We can’t wait for the box to be empty before we think outside the box."</p>
+                        <p className="text-left leading-relaxed border-l-4 border-gray-400 pl-4 italic">"We can’t wait for the box to be empty before we think outside the box."</p>
                         <p className="text-left leading-relaxed">His words and this experience reminded me that addressing microplastic pollution cannot wait. Meaningful action is needed now before the damage to our oceans and marine life becomes irreversible.</p>
                         <p className="text-left leading-relaxed">What technology can do is create more data and information, which helps people realize the seriousness of the issue and drives the need for urgent action. Through innovative solutions, we can accelerate environmental research and provide people with the tools and insights needed to take action.</p>
                     </div>
@@ -204,7 +204,7 @@ const Green = () => {
             </section>
             <section id="acknowledgement" className="py-8 px-9 md:px-64">
                 <h2 className="font-sub font-bold py-7">acknowledgement</h2>
-                <p className="text-left" style={{ whiteSpace: "pre-line" }}>{conclude}</p>
+                <p className="text-justify" style={{ whiteSpace: "pre-line" }}>{conclude}</p>
             </section>
 
         </div>

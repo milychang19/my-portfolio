@@ -56,7 +56,7 @@ const Home = () => {
           </ul>
         </div>
       </div>
-      <div className="flex flex-col items-center py-12">
+      <div className="hidden md:block flex flex-col items-center py-12">
         <div className="flex flex-col items-center cursor-pointer" 
           onClick={() => {
             const dest = document.getElementById("projects");

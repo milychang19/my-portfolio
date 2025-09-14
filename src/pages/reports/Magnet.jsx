@@ -262,15 +262,15 @@ const Magnet = () => {
 
   return (
     <div className="text-lg">
-      <button onClick={() => window.history.back()} className="absolute top-10 left-10 px-4 py-2 text-4xl md:text-5xl">↩</button>
+      <button onClick={() => window.history.back()} className="absolute top-5 left-2 md:top-10 md:left-10 px-4 py-2 text-4xl md:text-5xl">↩</button>
       <section id="introduction" className="py-8 px-5 md:px-48">
-        <h1 className="font-sub text-4xl md:text-5xl font-bold pt-10 animate-fade-in-zoom1">my journey as a <br className="block md:hidden"/> Software Developer <br/> with Magnet Forensics</h1>
-          <p className="px-4 md:w-3/4 text-center place-self-center py-5">{intro}</p>
-        <hr className="mx-4 border-brown opacity-20 md:mx-14"></hr>
-        <div className="my-10 md:p-10">
+        <h1 className="font-sub text-3xl md:text-5xl font-bold pt-10 animate-fade-in-zoom1">my journey as a <br className="block md:hidden"/> Software Developer <br/> with Magnet Forensics</h1>
+          <p className="px-4 md:w-3/4 text-justify place-self-center py-5">{intro}</p>
+        <hr className="mx-4 mb-6 md:my-4 border-brown opacity-20 md:mx-14"></hr>
+        <div className="md:p-10">
           <h2 className="font-sub font-bold">about Magnet Forensics</h2>
           <h3 className="pt-2 font-bold text-green italic">Unlock the Truth. Protect the Innocent.</h3>
-          <div className="bg-quartz bg-opacity-50 m-5 p-7 md:p-14 rounded-[50px] shadow-md">
+          <div className="bg-quartz bg-opacity-50 m-5 p-5 md:p-14 rounded-[50px] shadow-md text-justify">
             <p style={{ whiteSpace: "pre-line" }}>{company}</p>
           </div>
         </div>
@@ -280,7 +280,7 @@ const Magnet = () => {
         <div className="py-8 px-5 md:px-48">
           <div className="py-4">
             <h2 className="font-sub font-bold text-forest py-3">a glimpse into my job</h2>
-            <p style={{ whiteSpace: "pre-line" }} className="m-4 md:px-16">{job}</p>
+            <p style={{ whiteSpace: "pre-line" }} className="m-4 md:px-16 text-justify">{job}</p>
           </div>
             <div className="rounded-[50px] bg-white bg-opacity-50 text-left p-7 md:px-14 md:py-8 m-2 md:w-3/4 place-self-center shadow-lg text-sm md:text-base">
             <p className="font-bold">The technology and tools I leveraged in my role:</p>
@@ -303,7 +303,7 @@ const Magnet = () => {
       
         <div className="bg-forest bg-opacity-70 rounded-[50px] py-8 px-9 md:px-48">
           <h2 className="font-sub font-bold text-beige py-3">The Most Interesting Aspects of My Job</h2>
-          <p style={{ whiteSpace: "pre-line" }} className="text-beige m-4 md:px-20">{experience}</p>
+          <p style={{ whiteSpace: "pre-line" }} className="text-beige m-4 md:px-20 text-justify">{experience}</p>
         </div>
       </section>
       <section>
@@ -332,7 +332,7 @@ const Magnet = () => {
           <li key={index}>
             <button
               onClick={() => handleButtonClick(index)}
-              className={`px-4 py-2 w-20 md:w-32 rounded-t-[30px] md:rounded-t-[50px] ${goal.color} text-white font-sub transition-transform duration-100 ease-in hover:scale-y-[1.15] hover:z-5`}
+              className={`px-4 py-2 w-14 md:w-32 rounded-t-[25px] md:rounded-t-[50px] ${goal.color} text-white font-sub transition-transform duration-100 ease-in hover:scale-y-[1.15] hover:z-5`}
             >
               {index + 1}
             </button>
@@ -340,15 +340,15 @@ const Magnet = () => {
         ))}
         </ul>
 
-        <div className={`p-7 md:p-14 rounded-[50px] rounded-tl-none ${currentGoal.color} h-auto z-20 relative shadow-md align-middle`}>
-          <h2 className="font-sub font-bold text-lg md:text-xl mb-3">{currentGoal.title}</h2>
-          <p style={{ whiteSpace: "pre-line" }}>{currentGoal.results}</p>
+        <div className={`p-4 md:p-14 rounded-[50px] rounded-tl-none ${currentGoal.color} h-auto z-20 relative shadow-md align-middle`}>
+          <h2 className="font-sub font-bold text-base md:text-xl mb-3">{currentGoal.title}</h2>
+          <p style={{ whiteSpace: "pre-line" }} className="text-justify">{currentGoal.results}</p>
         </div>
       </section>
 
       <section id="acknowledgement" className="py-8 px-9 md:px-64">
         <h2 className="font-sub font-bold py-7">acknowledgement</h2>
-        <p className="text-left" style={{ whiteSpace: "pre-line" }}>{conclude}</p>
+        <p className="text-left text-justify" style={{ whiteSpace: "pre-line" }}>{conclude}</p>
       </section>
   
     </div>
