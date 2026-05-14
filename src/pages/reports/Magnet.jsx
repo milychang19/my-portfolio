@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logo from '../../elements/magnet-logo.png';
 
 const intro = [
   "This report highlights my experience as a ",
@@ -261,38 +262,96 @@ const Magnet = () => {
   };
 
   return (
-    <div className="text-lg">
-      <button onClick={() => window.history.back()} className="absolute top-5 left-2 md:top-10 md:left-10 px-4 py-2 text-4xl md:text-5xl">↩</button>
-      <section id="introduction" className="py-8 px-5 md:px-48">
-        <h1 className="font-sub text-3xl md:text-5xl font-bold pt-10 animate-fade-in-zoom1">my journey as a <br className="block md:hidden"/> Software Developer <br/> with Magnet Forensics</h1>
-          <p className="px-4 md:w-3/4 text-justify place-self-center py-5">{intro}</p>
-        <hr className="mx-4 mb-6 md:my-4 border-brown opacity-20 md:mx-14"></hr>
-        <div className="md:p-10">
-          <h2 className="font-sub font-bold">about Magnet Forensics</h2>
-          <h3 className="pt-2 font-bold text-green italic">Unlock the Truth. Protect the Innocent.</h3>
-          <div className="bg-quartz bg-opacity-50 m-5 p-5 md:p-14 rounded-[50px] shadow-md text-justify">
+    <div className="text-lg overflow-x-hidden">
+      <button
+        onClick={() => window.history.back()}
+        className="absolute top-5 left-2 md:top-10 md:left-10 px-4 py-2 text-4xl md:text-5xl"
+      >
+        ↩
+      </button>
+
+      <section
+        id="introduction"
+        className="min-h-screen flex flex-col justify-center gap-12 md:gap-20 py-24 md:py-32 px-6 sm:px-10 md:px-20 lg:px-32 xl:px-48"
+      >
+        <div className="max-w-4xl mx-auto mb-28 mt-8">
+          <div className="flex flex-col items-center gap-3">
+          <img
+              src={logo}
+              alt="Magnet Forensics Logo"
+              className="w-24 h-24 object-cover rounded-xl m-4 shadow-sm"
+          />
+          <h1 className="font-sub text-3xl md:text-5xl font-bold animate-fade-in-zoom1 leading-tight mb-8 md:mb-12">
+            my journey as a <br className="block md:hidden" />
+            Software Developer <br />
+            with Magnet Forensics
+          </h1>
+          </div>
+
+          <p
+            className="text-justify"
+            style={{ whiteSpace: "pre-line" }}
+          >
+            {intro}
+          </p>
+        </div>
+
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-sub font-bold mb-2 md:mb-4">
+            about Magnet Forensics
+          </h2>
+
+          <h3 className="font-bold text-green italic mb-6 md:mb-10">
+            Unlock the Truth. Protect the Innocent.
+          </h3>
+
+          <div className="bg-quartz bg-opacity-50 py-12 p-6 md:p-14 rounded-[50px] shadow-md text-justify">
             <p style={{ whiteSpace: "pre-line" }}>{company}</p>
           </div>
         </div>
       </section>
 
-      <section id="responsibilities" className="rounded-[50px] bg-matcha">
-        <div className="py-8 px-5 md:px-48">
-          <div className="py-4">
-            <h2 className="font-sub font-bold text-forest py-3">a glimpse into my job</h2>
-            <p style={{ whiteSpace: "pre-line" }} className="m-4 md:px-16 text-justify">{job}</p>
+      <section
+        id="responsibilities"
+        className="rounded-[50px] bg-matcha pt-12 md:pt-20"
+      >
+        <div className="px-6 sm:px-10 md:px-20 lg:px-32 xl:px-48">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-sub font-bold text-forest mt-10 md:mt-16 mb-6 md:mb-10">
+              a glimpse into my job
+            </h2>
+
+            <p
+              style={{ whiteSpace: "pre-line" }}
+              className="text-justify"
+            >
+              {job}
+            </p>
           </div>
-            <div className="rounded-[50px] bg-white bg-opacity-50 text-left p-7 md:px-14 md:py-8 m-2 md:w-3/4 place-self-center shadow-lg text-sm md:text-base">
-            <p className="font-bold">The technology and tools I leveraged in my role:</p>
-            <li>C#, Git, and SQLite</li>
-            <li>Visual Studio</li>
-            <li>Jira and Agile Board</li>
-            <li>Jenkins for automation testing (Artifact Regression, Case Metrics)</li>
-            <li>Azure DevOps</li>
+
+          <div className="rounded-[50px] bg-white bg-opacity-50 text-left p-6 py-12 md:p-14 mt-10 max-w-4xl mx-auto shadow-lg text-sm md:text-base">
+            <p className="font-bold mb-2">
+              The technology and tools I leveraged in my role:
+            </p>
+
+            <div>
+              <li>C#, Git, and SQLite</li>
+              <li>Visual Studio</li>
+              <li>Jira and Agile Board</li>
+              <li>Jenkins for automation testing (Artifact Regression, Case Metrics)</li>
+              <li>Azure DevOps</li>
+            </div>
           </div>
-          <div className="text-left py-6 px-8 md:px-32">
-            <h3 className="font-sub font-bold text-forest text-2xl mb-2">highlights of my responsibilities</h3>
-            <p className="font-bold">Here’s a snapshot of the tasks I worked on:</p>
+
+          <div className="max-w-4xl mx-auto mt-16 md:mt-24 text-left">
+            <h3 className="font-sub font-bold text-forest text-xl md:text-2xl md:mb-4">
+              highlights of my responsibilities
+            </h3>
+
+            <p className="font-bold mb-4">
+              Here’s a snapshot of the tasks I worked on:
+            </p>
+
             <ul className="list-disc list-inside text-base md:text-lg">
               {list.map((point, index) => (
                 <li key={index}>{point}</li>
@@ -300,57 +359,109 @@ const Magnet = () => {
             </ul>
           </div>
         </div>
-      
-        <div className="bg-forest bg-opacity-70 rounded-[50px] py-8 px-9 md:px-48">
-          <h2 className="font-sub font-bold text-beige py-3">The Most Interesting Aspects of My Job</h2>
-          <p style={{ whiteSpace: "pre-line" }} className="text-beige m-4 md:px-20 text-justify">{experience}</p>
-        </div>
-      </section>
-      <section>
-      
-        <div className="py-8 px-9 md:px-64">
-          <h2 className="font-sub font-bold text-2xl md:text-3xl py-3">Why <span className="text-blue">Precision</span> is Key at Magnet Forensics</h2>
-          <div className="text-left m-4">
-            <p>{principle1}</p>
-            <p>This focus on precision influenced how I approached my tasks, such as:</p>
-            {steps.map((point, index) => (
-              <li key={index}>{point}</li>
-            ))}
-            <p><br/>{principle2}</p>
+
+        <div className="bg-forest bg-opacity-70 rounded-[50px] py-16 md:py-32 px-6 sm:px-10 md:px-20 lg:px-32 xl:px-48 mt-16">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-sub font-bold text-beige mb-6 md:mb-10">
+              The Most Interesting Aspects of My Job
+            </h2>
+
+            <p
+              style={{ whiteSpace: "pre-line" }}
+              className="text-beige text-justify"
+            >
+              {experience}
+            </p>
           </div>
         </div>
       </section>
 
-      <hr className="mx-9 border-brown opacity-20 md:mx-14"></hr>
+      <section className="py-12 md:py-20 px-6 sm:px-10 md:px-20 lg:px-32 xl:px-48">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-sub font-bold text-2xl md:text-3xl mb-6 md:mb-10">
+            Why <span className="text-blue">Precision</span> is Key at Magnet
+            Forensics
+          </h2>
 
-      <section id="goals" className="px-5 md:px-64">
-        <h2 className="font-sub font-bold pt-6">goals & growth</h2>
-        <h3 className="font-bold text-green italic">Learning Outcomes</h3>
+          <div className="text-left space-y-5">
+            <p>{principle1}</p>
 
-        <ul className="flex mt-4">
-        {goals.map((goal, index) => (
-          <li key={index}>
-            <button
-              onClick={() => handleButtonClick(index)}
-              className={`px-4 py-2 w-14 md:w-32 rounded-t-[25px] md:rounded-t-[50px] ${goal.color} text-white font-sub transition-transform duration-100 ease-in hover:scale-y-[1.15] hover:z-5`}
-            >
-              {index + 1}
-            </button>
-          </li>
-        ))}
-        </ul>
+            <p>
+              This focus on precision influenced how I approached my tasks,
+              such as:
+            </p>
 
-        <div className={`p-4 md:p-14 rounded-[50px] rounded-tl-none ${currentGoal.color} h-auto z-20 relative shadow-md align-middle`}>
-          <h2 className="font-sub font-bold text-base md:text-xl mb-3">{currentGoal.title}</h2>
-          <p style={{ whiteSpace: "pre-line" }} className="text-justify">{currentGoal.results}</p>
+            <ul className="list-disc list-inside text-base md:text-lg">
+              {steps.map((point, index) => (
+                <li key={index}>{point}</li>
+              ))}
+            </ul>
+
+            <p>{principle2}</p>
+          </div>
         </div>
       </section>
 
-      <section id="acknowledgement" className="py-8 px-9 md:px-64">
-        <h2 className="font-sub font-bold py-7">acknowledgement</h2>
-        <p className="text-left text-justify" style={{ whiteSpace: "pre-line" }}>{conclude}</p>
+      <section
+        id="goals"
+        className="py-12 md:py-20 px-6 sm:px-10 md:px-20 lg:px-32 xl:px-48"
+      >
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-sub font-bold">
+            goals & growth
+          </h2>
+
+          <h3 className="font-bold text-green italic pt-1 mb-6 md:mb-10">
+            Learning Outcomes
+          </h3>
+
+          <ul className="flex mt-4">
+            {goals.map((goal, index) => (
+            <li key={index}>
+                <button
+                onClick={() => handleButtonClick(index)}
+                className={`px-4 py-2 w-14 md:w-32 rounded-t-[25px] md:rounded-t-[50px] ${goal.color} text-white font-sub transition-transform duration-100 ease-in hover:scale-y-[1.15] hover:z-5`}
+                >
+                {index + 1}
+                </button>
+            </li>
+            ))}
+          </ul>
+
+          <div
+            className={`py-12 p-6 md:p-14 rounded-[50px] rounded-tl-none ${currentGoal.color} h-auto z-20 relative shadow-md align-middle`}
+          >
+            <h2 className="font-sub font-bold text-base md:text-xl mb-3">
+              {currentGoal.title}
+            </h2>
+
+            <p
+              style={{ whiteSpace: "pre-line" }}
+              className="text-justify"
+            >
+              {currentGoal.results}
+            </p>
+          </div>
+        </div>
       </section>
-  
+
+      <section
+        id="acknowledgement"
+        className="py-12 md:py-20 px-6 sm:px-10 md:px-20 lg:px-32 xl:px-48"
+      >
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-sub font-bold mb-6 md:mb-10">
+            acknowledgement
+          </h2>
+
+          <p
+            className="text-justify"
+            style={{ whiteSpace: "pre-line" }}
+          >
+            {conclude}
+          </p>
+        </div>
+      </section>
     </div>
   );
 };

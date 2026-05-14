@@ -1,17 +1,30 @@
-import {React, useState} from 'react';
+import { React, useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import logo from "../elements/logo-ec.png";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
   const handleScroll = (id) => {
-    const dest = document.getElementById(id);
-    if (dest) {
-      window.scrollTo({
-        top: dest.offsetTop - 70, // Adjust for any fixed header or spacing
-        behavior: "smooth", // Smooth scrolling
-      });
+    const scrollToSection = () => {
+      const dest = document.getElementById(id);
+      if (dest) {
+        window.scrollTo({
+          top: dest.offsetTop - 70,
+          behavior: "smooth",
+        });
+      }
+    };
+
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(scrollToSection, 100);
+    } else {
+      scrollToSection();
     }
   };
-  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 bg-beige md:bg-rose md:shadow-sm flex justify-between md:justify-start items-center px-5 pt-2 md:pt-0">

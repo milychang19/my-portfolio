@@ -73,7 +73,7 @@ const Home = () => {
             }
           }}>
           <span className="text-4xl mb-4">↓</span>
-          <p className="text-lg font-semibold text-gray-800">read more</p>
+          <p className="text-lg font-semibold text-gray-800">[read more]</p>
         </div>
       </div>
     </section>

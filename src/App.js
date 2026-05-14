@@ -40,6 +40,7 @@ function App() {
             path="/F24-work-term-report" 
             element={
               <>
+                <Header />
                 <Magnet />
                 <Footer />
                 </>
@@ -49,6 +50,7 @@ function App() {
             path="/S25-work-term-report" 
             element={
               <>
+                <Header />
                 <Green />
                 <Footer />
                 </>
@@ -58,6 +60,7 @@ function App() {
             path="/W26-work-term-report" 
             element={
               <>
+                <Header />
                 <Retail />
                 <Footer />
                 </>
