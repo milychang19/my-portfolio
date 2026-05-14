@@ -91,122 +91,175 @@ const Green = () => {
     };
 
     return (
-        <div className="text-lg">
-            <button onClick={() => window.history.back()} className="absolute top-5 left-2 md:top-10 md:left-10 px-4 py-2 text-4xl md:text-5xl hidden md:block">↩</button>
-            <section id="introduction" className="py-8 px-5 md:px-48">
-                <h1 className="font-sub text-3xl md:text-5xl font-bold pt-10 animate-fade-in-zoom1">my journey with <br/><span className="text-2xl md:text-4xl">⋆˚࿔</span> GreenContributor <span className="text-xl md:text-4xl">𝜗𝜚˚⋆</span></h1>
-                <p className="px-4 md:w-3/4 text-justify place-self-center py-5">{intro}</p>
-                <hr className="mx-4 border-brown opacity-20 md:mx-14"></hr>
-                <div className="my-5 md:my-10 px-4 md:px-10">
-                <h2 className="font-sub font-bold">about <span className="text-green">GreenContributor</span></h2>
-                <div className="bg-[#85a69b] bg-opacity-50 my-5 mb-0 p-6 md:p-14 rounded-[50px] shadow-md text-justify">
-                    <p style={{ whiteSpace: "pre-line" }}>{greenContributor}</p>
-                </div>
-                </div>
-            </section>
-            <section id="Moore">
-                <div className="bg-sky bg-opacity-70 rounded-[50px] pt-16 px-9 md:px-48 pb-12 md:pb-24 mb-10 md:mb-20">
-                <h3 className="text-[#46606f] font-bold text-left text-sm md:text-lg md:ml-16 ">Fellowship Research Opportunity ⋆˚꩜｡</h3>
-                <h2 className="font-sub font-bold text-2xl py-3">Moore Institute for Plastic Pollution Research</h2>
-                    <p style={{ whiteSpace: "pre-line" }} className="md:m-4 md:px-20 text-justify">{moore}</p>
-                <div className="flex justify-center gap-2 md:gap-8 mt-8">
-                    <img 
-                        src={image1} alt=""
-                        className="border-[10px] md:border-[24px] border-white rounded-lg w-1/2 md:w-1/3 shadow-sm"
-                    />
-                    <img 
-                        src={image2} alt=""
-                        className="border-[10px] md:border-[24px] border-white rounded-lg w-1/2 md:w-1/3 shadow-sm"
-                    />
-                </div>
-                </div>
-            </section>
+    <div className="text-lg overflow-x-hidden">
+        <section id="introduction" className="py-20 md:py-32 px-6 sm:px-10 md:px-20 lg:px-32 xl:px-48">
+        <div className="max-w-4xl mx-auto">
+            <h1 className="font-sub text-3xl md:text-5xl font-bold pt-16 md:pt-24 animate-fade-in-zoom1 mb-10">
+            my journey with <br />
+            <span className="text-2xl md:text-4xl">⋆˚࿔</span> GreenContributor <span className="text-xl md:text-4xl">𝜗𝜚˚⋆</span>
+            </h1>
 
-            <section id="responsibilities" className="rounded-[50px] bg-matcha py-12">
-                <div className="px-5 md:px-48">
-                    <div className="md:py-4">
-                        <h2 className="font-sub font-bold md:py-3"><span className="text-xl">✧˚ · .</span> major projects <span className="text-xl">. ˚ ✧ .</span></h2>
-                        <p style={{ whiteSpace: "pre-line" }} className="m-4 md:px-28">{job}</p>
-                    </div>
-                    <div className="rounded-[50px] bg-white bg-opacity-50 text-left p-7 md:px-14 md:py-8 m-2 md:w-3/4 place-self-center shadow-lg text-sm md:text-base">
-                        <p className="font-bold mb-2">The technology and tools I leveraged in my role:</p>
-                        <div className="pl-3">
-                            <li><span className="font-bold">Mobile Dev:</span> Next.js, Flutter (Dart)</li>
-                            <li><span className="font-bold">Backend:</span> Express.js (session), RESTful API design, JWT authentication</li>
-                            <li><span className="font-bold">Database & Clouds:</span> MySQL, PostgreSQL, Supabase</li>
-                            <li><span className="font-bold">Tools:</span> Git, Trello, Figma</li>
-                            <li><span className="font-bold">Image Processing:</span> Python, OpenCV, ImageJ</li>
-                        </div>
-                    </div>
-                </div>
-                    <section className="w-full py-10 md:pt-20">
-                        <h3 className="font-bold">˙⋆✮ Project 1  </h3>
-                        <h2 className="font-sub font-bold text-xl md:text-2xl text-forest p-2 px-4">FutureMindsChallenge: App Development</h2>
-                        <img src={project1} alt="decorative horizontal SVG" className="hidden md:block w-full" />
-                        <div className="mt-5 px-5 text-left place-self-center pl-12 md:p-0 md:w-1/2 text-base md:text-lg">
-                            {projectGreen.map((point, index) => (
-                            <li key={index}>{point}</li>
-                            ))}
-                        </div>
-                    </section>
-                    <section className="w-full md:py-10">
-                        <h3 className="font-bold">˙⋆✮ Project 2  </h3>
-                        <h2 className="font-sub font-bold text-xl md:text-2xl text-forest p-2 px-4">Automating Microplastic Analysis: Image Processing</h2>
-                        <img src={project2} alt="decorative horizontal SVG" className="hidden md:block w-full"/>
-                        <div className="m-5 p-5 text-left place-self-center md:p-0 md:w-1/2 text-base md:text-lg">
-                            <p className="pb-5">{myRole}</p>
-                            <p className="font-bold">My contributions included:</p>
-                            <div className="pl-2">
-                            {projectMoore.map((point, index) => (
-                                <li key={index}>{point}</li>
-                                ))}
-                                </div>
-                            </div>
-                    </section>
-            </section>
-
-            <section id="goals" className="px-5 md:px-64 py-10 md:py-20">
-                <h2 className="font-sub font-bold">☆ learning outcomes ☆</h2>
-                <h3 className="font-text font-bold text-green pt-1 italic">Goals & Growth</h3>
-                    <ul className="flex mt-4">
-                    {goals.map((goal, index) => (
-                    <li key={index}>
-                        <button
-                        onClick={() => handleButtonClick(index)}
-                        className={`px-4 py-2 w-14 md:w-32 rounded-t-[25px] md:rounded-t-[50px] ${goal.color} text-white font-sub transition-transform duration-100 ease-in hover:scale-y-[1.15] hover:z-5`}
-                        >
-                        {index + 1}
-                        </button>
-                    </li>
-                    ))}
-                    </ul>
-
-                    <div className={`p-4 md:p-14 rounded-[50px] rounded-tl-none ${currentGoal.color} h-auto z-20 relative shadow-md align-middle`}>
-                    <h2 className="font-sub font-bold text-base md:text-xl mb-3">{currentGoal.title}</h2>
-                    <p style={{ whiteSpace: "pre-line" }} className="text-justify">{currentGoal.results}</p>
-                    </div>
-            </section>
-            <section id="CaptainCharles" className="md:py-10 px-5 md:px-64">
-                <h2 className="font-sub font-bold text-2xl md:text-3xl">thinking beyond the box</h2>
-                <h3 className="font-bold text-[#46606f] pt-1 italic">
-                    Why Action on Sustainability Can't Wait
-                </h3>
-                <div className="flex flex-col md:flex-row items-start gap-4 mt-6 justify-center">
-                    <img src={image3} alt="" className="w-2/5 md:w-[32%] object-cover mx-auto md:mx-0"/>
-                    <div className="flex flex-col gap-4 px-4 ">
-                        <p className="text-left leading-relaxed">During my visit to California, I had the honour of visiting Captain Charles Moore at his home, where he shared a powerful reminder:</p>
-                        <p className="text-left leading-relaxed border-l-4 border-gray-400 pl-4 italic">"We can’t wait for the box to be empty before we think outside the box."</p>
-                        <p className="text-left leading-relaxed">His words and this experience reminded me that addressing microplastic pollution cannot wait. Meaningful action is needed now before the damage to our oceans and marine life becomes irreversible.</p>
-                        <p className="text-left leading-relaxed">What technology can do is create more data and information, which helps people realize the seriousness of the issue and drives the need for urgent action. Through innovative solutions, we can accelerate environmental research and provide people with the tools and insights needed to take action.</p>
-                    </div>
-                </div>
-            </section>
-            <section id="acknowledgement" className="py-8 px-9 md:px-64">
-                <h2 className="font-sub font-bold py-7">acknowledgement</h2>
-                <p className="text-justify" style={{ whiteSpace: "pre-line" }}>{conclude}</p>
-            </section>
-
+            <p className="text-justify py-8 md:py-12 md:pb-24">{intro}</p>
         </div>
+
+        {/* <hr className="max-w-4xl mx-auto border-brown opacity-20 w-full" /> */}
+
+        <div className="max-w-4xl mx-auto mb-6 mt-28">
+            <h2 className="font-sub font-bold mb-6 md:mb-10">
+            about <span className="text-green">GreenContributor</span>
+            </h2>
+
+            <div className="bg-[#85a69b] bg-opacity-50 p-6 py-12 md:p-14 md:py-20 rounded-[50px] shadow-md text-justify">
+            <p style={{ whiteSpace: "pre-line" }}>{greenContributor}</p>
+            </div>
+        </div>
+        </section>
+
+        <section id="Moore">
+        <div className="bg-sky bg-opacity-70 rounded-[50px] py-12 md:py-20 px-6 sm:px-10 md:px-20 lg:px-32 xl:px-48 ">
+            <div className="max-w-4xl mx-auto">
+            <h3 className="text-[#46606f] font-bold text-left text-sm md:text-lg">
+                Fellowship Research Opportunity ⋆˚꩜｡
+            </h3>
+
+            <h2 className="font-sub font-bold text-2xl mb-6 md:mb-14">
+                Moore Institute for Plastic Pollution Research
+            </h2>
+
+            <p style={{ whiteSpace: "pre-line" }} className="text-justify">{moore}</p>
+
+            <div className="flex justify-center gap-2 md:gap-12 mt-12">
+                <img src={image1} alt="" className="rounded-lg w-1/2 md:w-1/3 shadow-md" />
+                <img src={image2} alt="" className="rounded-lg w-1/2 md:w-1/3 shadow-md" />
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <section id="responsibilities" className="rounded-[50px] bg-matcha py-12 md:py-20">
+        <div className="px-6 sm:px-10 md:px-20 lg:px-32 xl:px-48">
+            <div className="max-w-4xl mx-auto">
+            <h2 className="font-sub font-bold mt-10 md:mt-16 mb-6 md:mb-10">
+                <span className="text-xl">✧˚ · .</span> major projects <span className="text-xl">. ˚ ✧ .</span>
+            </h2>
+
+            <p className="text-justify" style={{ whiteSpace: "pre-line" }}>{job}</p>
+            </div>
+
+            <div className="rounded-[50px] bg-white bg-opacity-50 text-left py-12 p-6 md:p-14 mt-10 max-w-4xl mx-auto shadow-lg text-sm md:text-base">
+            <p className="font-bold mb-2">The technology and tools I leveraged in my role:</p>
+            <div className="pl-3 space-y-1">
+                <li><span className="font-bold">Mobile Dev:</span> Next.js, Flutter (Dart)</li>
+                <li><span className="font-bold">Backend:</span> Express.js (session), RESTful API design, JWT authentication</li>
+                <li><span className="font-bold">Database & Clouds:</span> MySQL, PostgreSQL, Supabase</li>
+                <li><span className="font-bold">Tools:</span> Git, Trello, Figma</li>
+                <li><span className="font-bold">Image Processing:</span> Python, OpenCV, ImageJ</li>
+            </div>
+            </div>
+        </div>
+
+        <section className="w-full py-10 md:pt-20 px-6 sm:px-10 md:px-20 lg:px-32 xl:px-48">
+            <div className="max-w-4xl mx-auto">
+                <h3 className="font-bold">˙⋆✮ Project 1</h3>
+                <h2 className="font-sub font-bold text-xl md:text-2xl text-forest p-2 mb-6 md:mb-10">
+                FutureMindsChallenge: App Development
+                </h2>
+            </div>
+
+            <img
+                src={project1}
+                alt="decorative horizontal SVG"
+                className="hidden md:block w-screen max-w-none relative left-1/2 right-1/2 -translate-x-1/2"
+            />
+
+            <div className="max-w-4xl mx-auto mt-5 text-left text-base md:text-lg">
+                <ul className="list-disc list-inside space-y-2">
+                {projectGreen.map((point, index) => (
+                    <li key={index}>{point}</li>
+                ))}
+                </ul>
+            </div>
+            </section>
+
+        <section className="w-full py-10 md:pt-20 px-6 sm:px-10 md:px-20 lg:px-32 xl:px-48">
+            <div className="max-w-4xl mx-auto">
+            <h3 className="font-bold">˙⋆✮ Project 2</h3>
+            <h2 className="font-sub font-bold text-xl md:text-2xl text-forest p-2 mb-6 md:mb-10">
+                Automating Microplastic Analysis: Image Processing
+            </h2>
+            </div>
+
+            <img
+                src={project2}
+                alt="decorative horizontal SVG"
+                className="hidden md:block w-screen max-w-none relative left-1/2 right-1/2 -translate-x-1/2"
+            />
+            <div className="max-w-4xl mx-auto mt-5 text-left text-base md:text-lg">
+            <p className="pb-5">{myRole}</p>
+            <p className="font-bold mb-2">My contributions included:</p>
+            <ul className="list-disc list-inside space-y-2">
+                {projectMoore.map((point, index) => (
+                <li key={index}>{point}</li>
+                ))}
+            </ul>
+            </div>
+        </section>
+        </section>
+
+        <section id="goals" className="py-10 md:py-20 px-6 sm:px-10 md:px-20 lg:px-32 xl:px-48">
+        <div className="max-w-4xl mx-auto">
+            <h2 className="font-sub font-bold">☆ learning outcomes ☆</h2>
+            <h3 className="font-text font-bold text-green pt-1 italic mb-6 md:mb-10">Goals & Growth</h3>
+
+            <ul className="flex mt-4">
+                {goals.map((goal, index) => (
+                <li key={index}>
+                    <button
+                    onClick={() => handleButtonClick(index)}
+                    className={`px-4 py-2 w-14 md:w-32 rounded-t-[25px] md:rounded-t-[50px] ${goal.color} text-white font-sub transition-transform duration-100 ease-in hover:scale-y-[1.15] hover:z-5`}
+                    >
+                    {index + 1}
+                    </button>
+                </li>
+                ))}
+            </ul>
+
+            <div className={`py-12 p-6 md:p-14 rounded-[50px] rounded-tl-none ${currentGoal.color} h-auto z-20 relative shadow-md align-middle`}>
+            <h2 className="font-sub font-bold text-base md:text-xl mb-3">{currentGoal.title}</h2>
+            <p style={{ whiteSpace: "pre-line" }} className="text-justify">{currentGoal.results}</p>
+            </div>
+        </div>
+        </section>
+
+        <section id="CaptainCharles" className="py-10 md:py-20 px-6 sm:px-10 md:px-20 lg:px-32 xl:px-48">
+        <div className="max-w-4xl mx-auto">
+            <h2 className="font-sub font-bold text-2xl md:text-3xl">thinking beyond the box</h2>
+            <h3 className="font-bold text-[#46606f] pt-1 italic mb-6 md:mb-10">
+            Why Action on Sustainability Can't Wait
+            </h3>
+
+            <div className="flex flex-col md:flex-row items-start gap-6 mt-6 justify-center">
+            <img src={image3} alt="" className="w-2/5 md:w-[32%] object-cover mx-auto md:mx-0" />
+
+            <div className="flex flex-col gap-4">
+                <p className="text-left leading-relaxed">During my visit to California, I had the honour of visiting Captain Charles Moore at his home, where he shared a powerful reminder:</p>
+                <p className="text-left leading-relaxed border-l-4 border-gray-400 pl-4 italic">"We can’t wait for the box to be empty before we think outside the box."</p>
+                <p className="text-left leading-relaxed">His words and this experience reminded me that addressing microplastic pollution cannot wait. Meaningful action is needed now before the damage to our oceans and marine life becomes irreversible.</p>
+                <p className="text-left leading-relaxed">What technology can do is create more data and information, which helps people realize the seriousness of the issue and drives the need for urgent action. Through innovative solutions, we can accelerate environmental research and provide people with the tools and insights needed to take action.</p>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <section id="acknowledgement" className="py-12 md:py-20 md:pt-8 px-6 sm:px-10 md:px-20 lg:px-32 xl:px-48">
+            <h2 className="font-sub font-bold mb-6 md:mb-10">
+                acknowledgement
+            </h2>
+        <div className="max-w-4xl mx-auto">
+            <p className="text-justify" style={{ whiteSpace: "pre-line" }}>{conclude}</p>
+        </div>
+        </section>
+    </div>
     );
 };
 

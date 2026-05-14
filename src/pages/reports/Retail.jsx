@@ -124,7 +124,7 @@ const Retail = () => {
                         </p>
                     </div>
 
-                    <div className="rounded-[50px] bg-white bg-opacity-50 text-left p-6 md:px-14 md:py-8 py-12 mt-10 max-w-4xl mx-auto shadow-lg text-sm md:text-base">
+                    <div className="rounded-[50px] bg-white bg-opacity-50 text-left p-6 md:p-14 py-12 mt-10 max-w-4xl mx-auto shadow-lg text-sm md:text-base">
                         <p className="font-bold mb-2">
                             The technology and tools I leveraged in my role:
                         </p>
