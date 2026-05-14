@@ -34,13 +34,17 @@ const Home = () => {
               <span className="absolute left-0 bottom-[-2px] w-full h-[1px] bg-matcha"></span>
               <span className="absolute left-0 bottom-[-2px] w-0 h-[1px] group-hover:w-full group-hover:bg-brown transition-all duration-1000"></span>
               </span></a></li>
+            <li className="list-square hover:translate-x-1 duration-300 ease-out transition-all">full-stack developer intern @<a href="https://www.retailogists.com/" target="_black" rel="nonreferrer" title="Retailogists"><span className="relative group">Retailogists
+              <span className="absolute left-0 bottom-[-2px] w-full h-[1px] bg-matcha"></span>
+              <span className="absolute left-0 bottom-[-2px] w-0 h-[1px] group-hover:w-full group-hover:bg-brown transition-all duration-1000"></span>
+              </span></a></li>
             <li className="list-square hover:translate-x-1 duration-300 ease-out">previously:
               <ul className="grid gap-1 pl-6">
                 <li className="list-hollow">VR/AI developer @<a href="https://greencontributor.org/" target="_black" rel="nonreferrer" title="GreenContributoor"><span className="relative group">GreenContributor
               <span className="absolute left-0 bottom-[-2px] w-full h-[1px] bg-matcha"></span>
               <span className="absolute left-0 bottom-[-2px] w-0 h-[1px] group-hover:w-full group-hover:bg-brown transition-all duration-1000"></span>
               </span></a> (summer 2025)</li>
-                <li className="list-hollow">prev software developer @<a href="https://www.magnetforensics.com/" target="_black" rel="nonreferrer" title="Magnet Forensics"><span className="relative group">Magnet Forensics
+                <li className="list-hollow">software developer @<a href="https://www.magnetforensics.com/" target="_black" rel="nonreferrer" title="Magnet Forensics"><span className="relative group">Magnet Forensics
               <span className="absolute left-0 bottom-[-2px] w-full h-[1px] bg-matcha"></span>
               <span className="absolute left-0 bottom-[-2px] w-0 h-[1px] group-hover:w-full group-hover:bg-brown transition-all duration-1000"></span>
               </span></a> (fall 2024)</li>
