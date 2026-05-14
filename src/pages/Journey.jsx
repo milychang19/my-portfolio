@@ -5,9 +5,15 @@ import { MdArrowOutward } from "react-icons/md";
 
 const work = () => [
   {
+    position: "Full-Stack Developer Intern",
+    company: "@Retailogists",
+    time: "Jan 2026 - Present",
+    description: "View my work term report",
+  },
+  {
     position: "Residence Assistant",
     company: "@University of Guelph Student Housing",
-    time: "Aug 2023 - Present",
+    time: "Aug 2023 - Apr 2026",
     description: "This role strengthened my leadership and conflict resolution skills. Beyond enforcing building policies and safety protocols, I fostered a positive community by facilitating engaging and fun events. I built meaningful relationships with students, helping them feel a sense of belonging and security.",
   },
   {
@@ -66,6 +72,11 @@ const Journey = () => {
     window.scrollTo(0, 0); // Scrolls to the top of the page
   };
 
+  const handleClickW26 = () => {
+    navigate("/W26-work-term-report");
+    window.scrollTo(0, 0); // Scrolls to the top of the page
+  };
+
   return (
     <section id="journey" className="p-4 md:p-0 md:mb-24">
       <h1 className="font-sub text-4xl md:text-5xl font-bold pb-10 animate-fade-in-zoom1">my journey</h1>
@@ -80,12 +91,13 @@ const Journey = () => {
           <div className="text-left md:pl-8 md:w-[63%] cursor-pointer"
           // handle navigation to work term report
             {...(experience.company === "@Magnet Forensics" ? { onClick: handleClickF24 } : 
-                experience.company === "@GreenContributor" ? { onClick: handleClickS25 } : {})}>
+                experience.company === "@GreenContributor" ? { onClick: handleClickS25 } : 
+                experience.company === "@Retailogists" ? { onClick: handleClickW26 } :{})}>
 
             <p className="font-sub font-bold pr-1 text-xl md:text-2xl inline-block animate-fade-in-zoom3">{experience.position}</p>
             
             <p className={`font-sub text-base font-[600] inline-block italic duration-200 text-green md:text-brown animate-fade-in-zoom3 ${hoveredIndex !== null && hoveredIndex === index ? 'md:text-green duration-200':''}`}>{experience.company}</p>
-            {(experience.company === "@Magnet Forensics" || experience.company === "@GreenContributor") && (
+            {(experience.company === "@Magnet Forensics" || experience.company === "@GreenContributor" || experience.company === "@Retailogists") && (
               <MdArrowOutward className={`inline-block size-5 fill-green md:fill-brown animate-fade-in-zoom3 ${hoveredIndex !== null && hoveredIndex === index ? 'md:fill-green duration-200':''}`}/>
               // <button className="bg-star text-brown bg-opacity-70 text-sm px-10 py-2 rounded-full shadow-sm hover:bg-opacity-100 transition transition-500 animate-fade-in-zoom3" onClick={() =>navigate("/F24-work-term-report")}>View Work Term Report</button>
               // <button className="bg-transparent border-brown border-2 border-opacity-10 text-brown text-sm px-10 py-2 rounded-full shadow-sm hover:bg-brown hover:bg-opacity-20 hover:text-beige transition transition-500 animate-fade-in-zoom3" onClick={handleClick}>View Work Term Report</button>

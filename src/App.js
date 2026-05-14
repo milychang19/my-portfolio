@@ -13,6 +13,7 @@ import Contact from "./pages/Contact";
 import Footer from "./pages/Footer";
 import Magnet from "./pages/reports/Magnet";
 import Green from "./pages/reports/Green";
+import Retail from "./pages/reports/Retail";
 
 
 function App() {
@@ -49,6 +50,15 @@ function App() {
             element={
               <>
                 <Green />
+                <Footer />
+                </>
+              } 
+              />
+            <Route 
+            path="/W26-work-term-report" 
+            element={
+              <>
+                <Retail />
                 <Footer />
                 </>
               } 
