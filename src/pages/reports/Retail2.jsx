@@ -215,7 +215,7 @@ const Retail2 = () => {
                     onClick={() => { navigate('/W26-work-term-report'); setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 50); }}
                     className="px-3 py-2"
                 >
-                    ◀ [winter report]
+                    {"\u25C0\uFE0E"} [winter report]
                 </button>
             </div>
         </div>
