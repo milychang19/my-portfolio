@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import image1 from '../../elements/IMG_1807.jpg';
 import image2 from '../../elements/IMG_6172.JPG';
 import image3 from '../../elements/IMG_6643.jpg';
@@ -81,9 +82,10 @@ const goals = [
 ];
 
 const conclude = [
-    "I’m incredibly grateful to GreenContributor for making so many opportunities possible for me. Through this experience, I gained hands-on exposure to innovative projects, worked with people from diverse backgrounds, and expanded my perspective by traveling to new places and challenging myself to grow. A special thank you to George Koshy, my supervisor, who constantly came up with ambitious and innovative ideas. He actively connected me with opportunities and gave me the resources to pursue them, which I’m truly grateful for. His effort to open doors for me made this co-op a truly unique experience.\n\n I’m also thankful to my two traveling partners across the States. To Jaeden, my coding partner, it was both of our first times developing for mobile, and working together through obstacles was a great learning experience that helped us both grow. To Manar, my traveling roommate, her inspiring story, dedication, and curiosity to make the world a better place taught me so much. She brought her uplifting spirit and passion to our work, leaving a lasting impact on everyone around her <3. \n\nFinally, I would like to thank the Moore Institute for Plastic Pollution Research for this rare and exciting opportunity. Having hands-on lab experience in California was truly memorable. Thank you to Win for helping with logistics, guiding us, and giving us the space to explore research projects on our own. And thanks to everyone at the institute who made us feel welcomed and answered all our questions. I’ll never forget the inspiring work I was part of at Moore, and being able to work right next to the harbour with the ocean just outside and the chance to walk along the water during breaks. It honestly felt like a dream"
+    "I’m incredibly grateful to GreenContributor for making so many opportunities possible for me. Through this experience, I gained hands-on exposure to innovative projects, worked with people from diverse backgrounds, and expanded my perspective by traveling to new places and challenging myself to grow. A special thank you to George Koshy, my supervisor, who constantly came up with ambitious and innovative ideas. He actively connected me with opportunities and gave me the resources to pursue them, which I’m truly grateful for. His effort to open doors for me made this co-op a truly unique experience.\n\n I’m also thankful to my two traveling partners across the States. To Jaeden George, my coding partner, it was both of our first times developing for mobile, and working together through obstacles was a great learning experience that helped us both grow. To Manar Elkebir, my traveling roommate, her inspiring story, dedication, and curiosity to make the world a better place taught me so much. She brought her uplifting spirit and passion to our work, leaving a lasting impact on everyone around her <3. \n\nFinally, I would like to thank the Moore Institute for Plastic Pollution Research for this rare and exciting opportunity. Having hands-on lab experience in California was truly memorable. Thank you to Win for helping with logistics, guiding us, and giving us the space to explore research projects on our own. And thanks to everyone at the institute who made us feel welcomed and answered all our questions. I’ll never forget the inspiring work I was part of at Moore, and being able to work right next to the harbour with the ocean just outside and the chance to walk along the water during breaks. It honestly felt like a dream"
 ];
 const Green = () => {
+    const navigate = useNavigate();
     const [currentGoal, setCurrentGoal] = useState(goals[0]); // Default to the first goal
     
     const handleButtonClick = (index) => {
@@ -92,6 +94,13 @@ const Green = () => {
 
     return (
     <div className="text-lg overflow-x-hidden">
+        <button
+            onClick={() => navigate(-1)}
+            aria-label="Go back"
+            className="block ml-4 mt-4 md:fixed md:top-24 md:left-10 z-0 px-3 py-2"
+        >
+            [back]
+        </button>
         <section id="introduction" className="py-20 md:py-32 px-6 sm:px-10 md:px-20 lg:px-32 xl:px-48">
         <div className="max-w-4xl mx-auto">
             <h1 className="font-sub text-3xl md:text-5xl font-bold pt-16 md:pt-24 animate-fade-in-zoom1 mb-10">

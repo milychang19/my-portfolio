@@ -7,7 +7,7 @@ const work = () => [
   {
     position: "Full-Stack Developer Intern",
     company: "@Retailogists",
-    time: "Jan 2026 - Present",
+    time: "Jan 2026 - Aug 2026",
     description: "View my work term report",
   },
   {

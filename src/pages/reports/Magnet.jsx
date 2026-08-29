@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import logo from '../../elements/magnet-logo.png';
 
 const intro = [
@@ -208,7 +209,7 @@ const conclude = [
   `
 
   I want to extend my heartfelt thanks to my `,
-  <strong>manager, Chen</strong>,
+  <strong>manager, Chen Li</strong>,
   ", for his incredible ",
   <strong>leadership</strong>,
   ". His feedback was always constructive, and instead of focusing on mistakes, he used them as ",
@@ -218,7 +219,7 @@ const conclude = [
   `
 
   I also deeply appreciate my `,
-  <strong>mentor and interviewer, Caleb</strong>,
+  <strong>mentor and interviewer, Caleb Phillips</strong>,
   ", who helped me get on my feet from the very beginning. His deep knowledge of the products and his passion for the field were contagious, ",
   <strong>inspiring</strong>,
   " me to embrace this work fully. He never hesitated to help and explained everything with details, which made a ",
@@ -230,7 +231,7 @@ const conclude = [
   "for her ",
   <strong>invaluable advice</strong>,
   ", both inside and outside of work, and ",
-  <strong>Danny </strong>,
+  <strong>Danny Lobo</strong>,
   "for being an amazing partner to ",
   <strong>collaborate </strong>,
   "with. I’m also grateful to the rest of the ",
@@ -256,6 +257,7 @@ const conclude = [
 
 const Magnet = () => {
   const [currentGoal, setCurrentGoal] = useState(goals[0]); // Default to the first goal
+  const navigate = useNavigate();
 
   const handleButtonClick = (index) => {
     setCurrentGoal(goals[index]);
@@ -264,10 +266,11 @@ const Magnet = () => {
   return (
     <div className="text-lg overflow-x-hidden">
       <button
-        onClick={() => window.history.back()}
-        className="absolute top-5 left-2 md:top-10 md:left-10 px-4 py-2 text-4xl md:text-5xl"
+        onClick={() => navigate(-1)}
+        aria-label="Go back"
+        className="block ml-4 mt-4 md:fixed md:top-24 md:left-10 z-0 px-3 py-2"
       >
-        ↩
+        [back]
       </button>
 
       <section
@@ -276,7 +279,7 @@ const Magnet = () => {
       >
         <div className="max-w-4xl mx-auto mb-28 mt-8">
           <div className="flex flex-col items-center gap-3">
-          <img
+            <img
               src={logo}
               alt="Magnet Forensics Logo"
               className="w-24 h-24 object-cover rounded-xl m-4 shadow-sm"
@@ -288,25 +291,20 @@ const Magnet = () => {
           </h1>
           </div>
 
-          <p
-            className="text-justify"
-            style={{ whiteSpace: "pre-line" }}
-          >
+          <p className="text-justify" style={{ whiteSpace: 'pre-line' }}>
             {intro}
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-sub font-bold mb-2 md:mb-4">
-            about Magnet Forensics
-          </h2>
+          <h2 className="font-sub font-bold mb-2 md:mb-4">about Magnet Forensics</h2>
 
           <h3 className="font-bold text-green italic mb-6 md:mb-10">
             Unlock the Truth. Protect the Innocent.
           </h3>
 
           <div className="bg-quartz bg-opacity-50 py-12 p-6 md:p-14 rounded-[50px] shadow-md text-justify">
-            <p style={{ whiteSpace: "pre-line" }}>{company}</p>
+            <p style={{ whiteSpace: 'pre-line' }}>{company}</p>
           </div>
         </div>
       </section>

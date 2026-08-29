@@ -10,36 +10,36 @@ const Home = () => {
       <div className="flex flex-col md:flex-row md:pt-32 px-5 md:px-20 justify-center md:justify-end items-center md:items-start">
         <div className="flex flex-row md:flex-col px-2 justify-center py-8 md:w-[22%] md:p-4 gap-2 md:gap-0">
           <div className="w-[42%] md:w-full md:mt-8">
-            <img src={portrait} alt="" className=" rounded-full shadow-sm animate-fade-in-zoom1 mx-auto"/>
+            <img src={portrait} alt="" className="rounded-full shadow-sm animate-fade-in-zoom1 mx-auto"/>
           </div>
-          <div className="pt-5 md:pt-0 animate-fade-in-zoom1">
-            <h1 className="block md:hidden font-sub font-bold text-3xl">emily chang</h1>
+          <div className="pt-5 md:pt-0">
+            <h1 className="block md:hidden font-sub font-bold text-3xl animate-fade-in-zoom1">emily chang</h1>
             <a href={resume} title="Resume" target="_blank" rel="noreferrer">
-              <button className="text-base relative group pt-3">view my resume
+              <button className="text-base relative group pt-3 animate-fade-in-zoom2">view my resume
                 <span className="absolute left-0 bottom-0 w-full h-[1px] bg-matcha"></span>
                 <span className="absolute left-0 bottom-0 w-0 h-[1px] group-hover:w-full group-hover:bg-brown transition-all duration-1000"></span>
               </button>
               </a>
-            <div className="flex justify-center py-3 transition-all duration-200 gap-3">
-              <a href="https://www.linkedin.com/in/emily-chang-485962234/" target="_blank" rel="noreferrer" title="LinkedIn" className="transform transition-transform duration-300 hover:scale-110"><FiLinkedin/></a>
+            <div className="flex justify-center py-3 transition-all duration-200 gap-3 animate-fade-in-zoom3">
+              <a href="https://www.linkedin.com/in/emilychang19/" target="_blank" rel="noreferrer" title="LinkedIn" className="transform transition-transform duration-300 hover:scale-110"><FiLinkedin/></a>
               <a href="https://github.com/milychang19" target="_blank" rel="noreferrer" title="GitHub" className="transform transition-transform duration-300 hover:scale-110"><FiGithub/></a>
               <a href="mailto:emily0109.ec@gmail.com" title="emily0109.ec@gmail.com" className="transform transition-transform duration-300 hover:scale-110"><FiMail/></a>
             </div>
           </div>
         </div>
-        <div className="md:w-2/3 p-4 text-left gap-5 flex-col flex animate-fade-in-zoom3">
+        <div className="md:w-2/3 p-4 text-left gap-5 flex-col flex">
           <h1 className="hidden md:block font-sub font-bold text-6xl animate-fade-in-zoom1">emily chang</h1>
-          <ul className="grid gap-1 text-base">
+          <ul className="grid gap-1 text-base animate-fade-in-zoom2">
             <li className="list-square hover:translate-x-1 duration-300 ease-out transition-all">computer science, mathematics @<a href="https://www.uoguelph.ca/" target="_black" rel="nonreferrer" title="University of Guelph"><span className="relative group">UofGuelph
-              <span className="absolute left-0 bottom-[-2px] w-full h-[1px] bg-matcha"></span>
-              <span className="absolute left-0 bottom-[-2px] w-0 h-[1px] group-hover:w-full group-hover:bg-brown transition-all duration-1000"></span>
-              </span></a></li>
-            <li className="list-square hover:translate-x-1 duration-300 ease-out transition-all">full-stack developer intern @<a href="https://www.retailogists.com/" target="_black" rel="nonreferrer" title="Retailogists"><span className="relative group">Retailogists
               <span className="absolute left-0 bottom-[-2px] w-full h-[1px] bg-matcha"></span>
               <span className="absolute left-0 bottom-[-2px] w-0 h-[1px] group-hover:w-full group-hover:bg-brown transition-all duration-1000"></span>
               </span></a></li>
             <li className="list-square hover:translate-x-1 duration-300 ease-out">previously:
               <ul className="grid gap-1 pl-6">
+                <li className="list-hollow">full-stack developer @<a href="https://www.retailogists.com/" target="_black" rel="nonreferrer" title="Retailogists"><span className="relative group">Retailogists
+              <span className="absolute left-0 bottom-[-2px] w-full h-[1px] bg-matcha"></span>
+              <span className="absolute left-0 bottom-[-2px] w-0 h-[1px] group-hover:w-full group-hover:bg-brown transition-all duration-1000"></span>
+              </span></a> (winter/summer 2026)</li>
                 <li className="list-hollow">VR/AI developer @<a href="https://greencontributor.org/" target="_black" rel="nonreferrer" title="GreenContributoor"><span className="relative group">GreenContributor
               <span className="absolute left-0 bottom-[-2px] w-full h-[1px] bg-matcha"></span>
               <span className="absolute left-0 bottom-[-2px] w-0 h-[1px] group-hover:w-full group-hover:bg-brown transition-all duration-1000"></span>
@@ -55,8 +55,8 @@ const Home = () => {
                 <li className="list-hollow">created debating platform with unbiased mediator (@GenAIGenesis)</li>
               </ul></li>
             <li className="list-square hover:translate-x-1 duration-300 ease-out">teaching assistant for discrete mathematics, math tutor in high school</li>
-            <li className="list-square hover:translate-x-1 duration-300 ease-out">residence assistant since August 2023</li>
-            <li className="list-square hover:translate-x-1 duration-300 ease-out">enjoy graphic designs, cryptography and more!</li>
+            <li className="list-square hover:translate-x-1 duration-300 ease-out">3 years of residence assistant experiences</li>
+            <li className="list-square hover:translate-x-1 duration-300 ease-out">enjoy graphic designs and creative projects!</li>
           </ul>
         </div>
       </div>
@@ -72,8 +72,8 @@ const Home = () => {
               });
             }
           }}>
-          <span className="text-4xl mb-4">↓</span>
-          <p className="text-lg font-semibold text-gray-800">[read more]</p>
+          {/* <span className="text-4xl mb-4">↓</span> */}
+          <p className="text-lg font-semibold text-gray-800 mt-12 animate-fade-in-zoom3">[read more]</p>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import logo from '../../elements/retailogists-logo.png';
 
 const intro = [
@@ -60,11 +61,12 @@ const goals = [
 ];
 
 const conclude = [
-    "I would like to thank Prateek, our CTO, supervisor, and mentor throughout my internship. At the beginning of the work term, he provided frequent support, guidance, and regular check-ins while also encouraging me to drive my own internship by taking ownership of my work and growth. He gave me valuable advice about career paths, professional development, and the expectations of working in a fast-paced development environment. Our conversations helped me better understand both my strengths and the areas where I could continue improving.\n\nI would also like to thank Aaron, who I collaborated with on many projects during the internship. He was always willing to help when needed and became someone I looked up to professionally because of his work ethic and technical skills. Working alongside him taught me a lot about collaboration, problem-solving, and development workflows.\n\nFinally, I would like to thank the rest of the developers and project managers at Retailogists for creating such a supportive and welcoming environment. Everyone I worked with was helpful, encouraging, and enjoyable to collaborate with. I am especially grateful that I will be continuing my journey with the company for another four months, where I hope to keep improving and contributing to more meaningful projects."
+    "I would like to thank Prateek Sanyal, our CTO, supervisor, and mentor throughout my internship. At the beginning of the work term, he provided frequent support, guidance, and regular check-ins while also encouraging me to drive my own internship by taking ownership of my work and growth. He gave me valuable advice about career paths, professional development, and the expectations of working in a fast-paced development environment. Our conversations helped me better understand both my strengths and the areas where I could continue improving.\n\nI would also like to thank Aaron Hoffman, who I collaborated with on many projects during the internship. He was always willing to help when needed and became someone I looked up to professionally because of his work ethic and technical skills. Working alongside him taught me a lot about collaboration, problem-solving, and development workflows.\n\nFinally, I would like to thank the rest of the developers and project managers at Retailogists for creating such a supportive and welcoming environment. Everyone I worked with was helpful, encouraging, and enjoyable to collaborate with. I am especially grateful that I will be continuing my journey with the company for another four months, where I hope to keep improving and contributing to more meaningful projects."
 ];
 
 const Retail = () => {
     const [currentGoal, setCurrentGoal] = useState(goals[0]);
+    const navigate = useNavigate();
 
     const handleButtonClick = (index) => {
         setCurrentGoal(goals[index]);
@@ -72,37 +74,43 @@ const Retail = () => {
 
     return (
         <div className="text-lg overflow-x-hidden">
-
+            <button
+                onClick={() => navigate('/')}
+                aria-label="Go back"
+                className="block ml-4 mt-4 md:fixed md:top-24 md:left-10 z-0 px-3 py-2"
+            >
+                [back]
+            </button>
             <section
                 id="introduction"
-                className="min-h-screen flex flex-col justify-center gap-12 md:gap-20 py-24 md:py-32 px-6 sm:px-10 md:px-20 lg:px-32 xl:px-48"
+                className="min-h-screen flex flex-col justify-center gap-12 md:gap-20 py-20 md:py-32 px-6 sm:px-10 md:px-20 lg:px-32 xl:px-48"
             >
                 <div className="flex flex-col items-center gap-3">
                     <img
                         src={logo}
                         alt="Retailogists Logo"
-                        className="w-24 h-24 object-cover rounded-xl m-4"
+                        className="w-24 h-24 object-cover rounded-xl m-4 animate-fade-in-zoom1"
                     />
 
-                    <h1 className="font-sub text-3xl md:text-5xl font-bold animate-fade-in-zoom1 leading-8 text-center">
+                    <h1 className="font-sub text-3xl md:text-5xl font-bold animate-fade-in-zoom2 leading-8 text-center">
                         my journey with Retailogists
                     </h1>
                 </div>
 
                 <p
-                    className="max-w-4xl mx-auto text-justify mb-8 md:mb-20"
+                    className="max-w-4xl mx-auto text-justify mb-8 md:mb-20 animate-fade-in-zoom3"
                     style={{ whiteSpace: 'pre-line' }}
                 >
                     {intro}
                 </p>
 
                 <div className="max-w-4xl mx-auto">
-                    <h2 className="font-sub font-bold mb-6 md:mb-10">
+                    <h2 className="font-sub font-bold mb-6 md:mb-10 animate-fade-in-zoom1">
                         ⋆˚࿔ Retailogists Inc. 𝜗𝜚˚⋆
                     </h2>
 
-                    <div className="bg-[#85a69b] bg-opacity-50 my-5 py-12 p-6 md:p-14 rounded-[50px] shadow-md text-justify">
-                        <p style={{ whiteSpace: 'pre-line' }}>{retailogists}</p>
+                    <div className="bg-[#85a69b] bg-opacity-50 my-5 py-12 p-6 md:p-14 rounded-[50px] shadow-md text-justify animate-fade-in-zoom2">
+                        <p style={{ whiteSpace: 'pre-line' }} className="animate-fade-in-zoom3">{retailogists}</p>
                     </div>
                 </div>
             </section>
@@ -110,7 +118,7 @@ const Retail = () => {
             <section id="responsibilities" className="rounded-[50px] bg-matcha py-12">
                 <div className="px-6 sm:px-10 md:px-20 lg:px-32 xl:px-48">
                     <div className="md:py-4">
-                        <h2 className="font-sub font-bold m-6 md:m-10">
+                        <h2 className="font-sub font-bold m-6 md:m-10 animate-fade-in-zoom1">
                             <span className="text-xl">✧˚ · . </span>
                             my contribution as a full-stack developer
                             <span className="text-xl"> . ˚ ✧ .</span>
@@ -118,20 +126,20 @@ const Retail = () => {
 
                         <p
                             style={{ whiteSpace: 'pre-line' }}
-                            className="max-w-4xl mx-auto text-justify mt-6"
+                            className="max-w-4xl mx-auto text-justify mt-6 animate-fade-in-zoom2"
                         >
                             {job}
                         </p>
                     </div>
 
-                    <div className="rounded-[50px] bg-white bg-opacity-50 text-left p-6 md:p-14 py-12 mt-10 max-w-4xl mx-auto shadow-lg text-sm md:text-base">
-                        <p className="font-bold mb-2">
+                    <div className="rounded-[50px] bg-white bg-opacity-50 text-left p-6 md:p-14 py-12 mt-10 max-w-4xl mx-auto shadow-lg text-sm md:text-base animate-fade-in-zoom2">
+                        <p className="font-bold mb-2 animate-fade-in-zoom3">
                             The technology and tools I leveraged in my role:
                         </p>
 
-                        <div className="pl-3 space-y-1">
+                        <div className="pl-3 space-y-1 animate-fade-in-zoom3">
                             <li>
-                                <span className="font-bold">Mobile Dev:</span>{' '}
+                                <span className="font-bold">Store Dev:</span>{' '}
                                 Shopify, Liquid, JavaScript, Wix, Unbounce
                             </li>
                             <li>
@@ -152,11 +160,11 @@ const Retail = () => {
                 </div>
 
                 <section className="w-full py-10 md:pt-20 px-6 sm:px-10 md:px-20 lg:px-32 xl:px-48">
-                    <h2 className="font-sub font-bold text-xl md:text-2xl text-forest p-2">
+                    <h2 className="font-sub font-bold text-xl md:text-2xl text-forest p-2 animate-fade-in-zoom1">
                         ˙⋆✮ Ecommerce Website Development
                     </h2>
 
-                    <div className="mt-5 max-w-4xl mx-auto text-base md:text-lg">
+                    <div className="mt-5 max-w-4xl mx-auto text-base md:text-lg animate-fade-in-zoom2">
                         <p className="text-justify" style={{ whiteSpace: 'pre-line' }}>
                             {webDev}
                         </p>
@@ -164,11 +172,11 @@ const Retail = () => {
                 </section>
 
                 <section className="w-full py-10 md:pt-20 px-6 sm:px-10 md:px-20 lg:px-32 xl:px-48">
-                    <h2 className="font-sub font-bold text-xl md:text-2xl text-forest p-2">
+                    <h2 className="font-sub font-bold text-xl md:text-2xl text-forest p-2 animate-fade-in-zoom1">
                         ˙⋆✮ Retail Analytics Application Development
                     </h2>
 
-                    <div className="mt-5 max-w-4xl mx-auto text-base md:text-lg">
+                    <div className="mt-5 max-w-4xl mx-auto text-base md:text-lg animate-fade-in-zoom2">
                         <p className="text-justify" style={{ whiteSpace: 'pre-line' }}>
                             {appDev}
                         </p>
@@ -181,12 +189,12 @@ const Retail = () => {
                 className="py-10 md:py-20 px-6 sm:px-10 md:px-20 lg:px-32 xl:px-48"
             >
                 <div className="max-w-4xl mx-auto">
-                    <h2 className="font-sub font-bold">☆ learning outcomes ☆</h2>
-                    <h3 className="font-text font-bold text-green pt-1 italic">
+                    <h2 className="font-sub font-bold animate-fade-in-zoom1">☆ learning outcomes ☆</h2>
+                    <h3 className="font-text font-bold text-green pt-1 italic animate-fade-in-zoom2">
                         Goals & Growth
                     </h3>
 
-                    <ul className="flex mt-4">
+                    <ul className="flex mt-4 animate-fade-in-zoom1">
                     {goals.map((goal, index) => (
                     <li key={index}>
                         <button
@@ -200,13 +208,13 @@ const Retail = () => {
                     </ul>
 
                     <div
-                        className={`py-12 p-6 md:p-14 rounded-[50px] rounded-tl-none ${currentGoal.color} h-auto z-20 relative shadow-md align-middle`}
+                        className={`py-12 p-6 md:p-14 rounded-[50px] rounded-tl-none animate-fade-in-zoom1 ${currentGoal.color} h-auto z-20 relative shadow-md align-middle`}
                     >
-                        <h2 className="font-sub font-bold text-base md:text-xl mb-3">
+                        <h2 className="font-sub font-bold text-base md:text-xl mb-3 animate-fade-in-zoom2">
                             {currentGoal.title}
                         </h2>
 
-                        <p style={{ whiteSpace: 'pre-line' }} className="text-justify">
+                        <p style={{ whiteSpace: 'pre-line' }} className="text-justify animate-fade-in-zoom3">
                             {currentGoal.results}
                         </p>
                     </div>
@@ -215,7 +223,7 @@ const Retail = () => {
 
             <section
                 id="acknowledgement"
-                className="py-8 px-6 sm:px-10 md:px-20 lg:px-32 xl:px-48"
+                className="py-8 px-6 sm:px-10 md:px-20 lg:px-32 xl:px-48 animate-fade-in-zoom2"
             >
                 <div className="max-w-4xl mx-auto">
                     <p className="text-justify" style={{ whiteSpace: 'pre-line' }}>
@@ -223,6 +231,16 @@ const Retail = () => {
                     </p>
                 </div>
             </section>
+            <div className="w-full flex px-6 pt-4 sm:px-10 md:px-20 lg:px-32 xl:px-64">
+                <div className="ml-auto">
+                    <button
+                        onClick={() => { navigate('/S26-work-term-report'); setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 50); }}
+                        className="px-3 py-2"
+                    >
+                        [summer report] ▶
+                    </button>
+                </div>
+            </div>
         </div>
     );
 };

@@ -14,11 +14,13 @@ import Footer from "./pages/Footer";
 import Magnet from "./pages/reports/Magnet";
 import Green from "./pages/reports/Green";
 import Retail from "./pages/reports/Retail";
+import Retail2 from "./pages/reports/Retail2";
 
 
 function App() {
   return (
     <Router>
+    
     <div className="font-text bg-beige text-center text-calc-size">
       <Routes>
           {/* Main Page with all sections */}
@@ -62,6 +64,17 @@ function App() {
               <>
                 <Header />
                 <Retail />
+                <Footer />
+                </>
+              } 
+              />
+
+            <Route 
+            path="/S26-work-term-report" 
+            element={
+              <>
+                <Header />
+                <Retail2 />
                 <Footer />
                 </>
               } 
