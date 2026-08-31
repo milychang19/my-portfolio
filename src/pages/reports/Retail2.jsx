@@ -169,7 +169,7 @@ const Retail2 = () => {
                 className="py-10 md:py-20 px-6 sm:px-10 md:px-20 lg:px-32 xl:px-48"
             >
                 <div className="max-w-4xl mx-auto">
-                    <h2 className="font-sub font-bold mb-6 md:mb-10 animate-fade-in-zoom1">☆ learning outcomes ☆</h2>
+                    <h2 className="font-sub font-bold mb-6 md:mb-10 animate-fade-in-zoom1">☆ learning outcomes☆</h2>
                     <ul className="flex mt-4 animate-fade-in-zoom1">
                     {goals.map((goal, index) => (
                     <li key={index}>

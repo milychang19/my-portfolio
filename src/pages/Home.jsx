@@ -40,18 +40,14 @@ const Home = () => {
               <span className="absolute left-0 bottom-[-2px] w-full h-[1px] bg-matcha"></span>
               <span className="absolute left-0 bottom-[-2px] w-0 h-[1px] group-hover:w-full group-hover:bg-brown transition-all duration-1000"></span>
               </span></a> (winter/summer 2026)</li>
-                <li className="list-hollow">VR/AI developer @<a href="https://greencontributor.org/" target="_black" rel="nonreferrer" title="GreenContributoor"><span className="relative group">GreenContributor
-              <span className="absolute left-0 bottom-[-2px] w-full h-[1px] bg-matcha"></span>
-              <span className="absolute left-0 bottom-[-2px] w-0 h-[1px] group-hover:w-full group-hover:bg-brown transition-all duration-1000"></span>
-              </span></a> (summer 2025)</li>
                 <li className="list-hollow">software developer @<a href="https://www.magnetforensics.com/" target="_black" rel="nonreferrer" title="Magnet Forensics"><span className="relative group">Magnet Forensics
               <span className="absolute left-0 bottom-[-2px] w-full h-[1px] bg-matcha"></span>
               <span className="absolute left-0 bottom-[-2px] w-0 h-[1px] group-hover:w-full group-hover:bg-brown transition-all duration-1000"></span>
               </span></a> (fall 2024)</li>
               </ul></li>
-            <li className="list-square hover:translate-x-1 duration-300 ease-out">what i've been building:
+            <li className="list-square hover:translate-x-1 duration-300 ease-out">hackathonmaxxing:
               <ul className="grid gap-1 pl-6">
-                <li className="list-hollow">created frij.io to address food insecurity with smart food management (Best AI @HackCanada)</li>
+                <li className="list-hollow">created smart food management to address food insecurity (Best AI @HackCanada)</li>
                 <li className="list-hollow">created debating platform with unbiased mediator (@GenAIGenesis)</li>
               </ul></li>
             <li className="list-square hover:translate-x-1 duration-300 ease-out">teaching assistant for discrete mathematics, math tutor in high school</li>

@@ -20,6 +20,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-18px);
+  }
+}
+
+.contact-logo-float {
+  animation: float 3s ease-in-out infinite;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

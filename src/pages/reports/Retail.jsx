@@ -106,7 +106,7 @@ const Retail = () => {
 
                 <div className="max-w-4xl mx-auto">
                     <h2 className="font-sub font-bold mb-6 md:mb-10 animate-fade-in-zoom1">
-                        ⋆˚࿔ Retailogists Inc. 𝜗𝜚˚⋆
+                        ⋆˚࿔ Retailogists 𝜗𝜚˚⋆
                     </h2>
 
                     <div className="bg-[#85a69b] bg-opacity-50 my-5 py-12 p-6 md:p-14 rounded-[50px] shadow-md text-justify animate-fade-in-zoom2">
@@ -189,7 +189,7 @@ const Retail = () => {
                 className="py-10 md:py-20 px-6 sm:px-10 md:px-20 lg:px-32 xl:px-48"
             >
                 <div className="max-w-4xl mx-auto">
-                    <h2 className="font-sub font-bold animate-fade-in-zoom1">☆ learning outcomes ☆</h2>
+                    <h2 className="font-sub font-bold animate-fade-in-zoom1">☆ learning outcomes☆</h2>
                     <h3 className="font-text font-bold text-green pt-1 italic animate-fade-in-zoom2">
                         Goals & Growth
                     </h3>
